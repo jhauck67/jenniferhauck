@@ -1,0 +1,60 @@
+// ******** FONTS ********
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(../fonts/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: "SourceSerif4";
+  src: url(../fonts/SourceSerif4-Light.ttf);
+}
+
+// ******** VARIABLE ********
+$title: Oswald-Medium, sans-serif;
+$paragraph: SourceSerif4, serif;
+$greyblue: #24566b;
+$orange: #ffa20d;
+$white1: #ecf4f9;
+$white2: #b3c2cc;
+$black1: #0d1e26;
+$black2: #353a3d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $white1;
+}
+li {
+  list-style: none;
+}
+a {
+  color: $orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 12px;
+  padding: 12px;
+}
+button {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $black1;
+  background: $orange;
+  border-radius: 5px;
+  margin-left: 20px;
+}
