@@ -1,2 +1,25 @@
 @import "./settings";
 @import "./header";
+@import "./navbar-accueil";
+
+section.portfolio {
+  background: $white1;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .portfolio-left {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .portfolio-right {
+    width: 50%;
+  }
+}

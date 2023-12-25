@@ -1,5 +1,4 @@
 header {
-  background: $greyblue;
   position: relative;
   .header-container {
     height: 100vh;
@@ -8,7 +7,6 @@ header {
     justify-content: center;
     .header-left {
       width: 60%;
-      height: 500px;
       padding-left: 48px;
       color: $white1;
       h1 {
@@ -20,70 +18,12 @@ header {
       }
     }
     .header-right {
-      height: 500px;
       width: 40%;
       text-align: center;
       display: block;
       img {
         height: 500px;
         box-shadow: 5px 5px 5px $black2;
-      }
-    }
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    padding: 24px;
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    ul {
-      height: 100%;
-    }
-    a,
-    i {
-      color: $white1;
-    }
-    .nav-left {
-      width: 10%;
-      height: 100%;
-      margin: auto;
-      text-align: center;
-      img {
-        width: 100%;
-        object-fit: cover;
-        padding: auto 12px;
-      }
-    }
-    .nav-middle {
-      width: 80%;
-      height: 100%;
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: auto;
-        li {
-          padding: 0 36px;
-          a {
-            color: $white1;
-            align-items: center;
-          }
-        }
-      }
-    }
-    .nav-right {
-      width: 10%;
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
       }
     }
   }

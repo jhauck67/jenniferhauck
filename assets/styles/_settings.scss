@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: $white1;
+  background: $greyblue;
 }
 li {
   list-style: none;
@@ -50,11 +50,18 @@ h6 {
 }
 button {
   text-align: center;
-  padding: 12px;
+  padding: 24px;
   font-size: 1.2rem;
   font-weight: bold;
   color: $black1;
   background: $orange;
   border-radius: 5px;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px;
+}
+p {
+  font-family: $paragraph;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 12px;
+  padding: 12px;
 }
