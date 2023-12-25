@@ -290,6 +290,9 @@ header .header-container .header-right img {
             justify-content: space-between;
   }
 }
+.navbar .nav-right ul li {
+  padding: 6px;
+}
 
 footer {
   display: -webkit-box;
