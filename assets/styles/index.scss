@@ -1,7 +1,9 @@
 @import "./settings";
 @import "./header";
 @import "./navbar-accueil";
+@import "./footer";
 
+// ******** PORTFOLIO ********
 section.portfolio {
   background: $white1;
   width: 90%;
@@ -10,16 +12,120 @@ section.portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 800px) {
+    padding: 12px;
+    display: block;
+    min-height: none;
+  }
+
   .portfolio-left {
     width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
+      padding: 60px;
+      @media screen and (max-width: 800px) {
+        padding: 24px;
+      }
     }
   }
   .portfolio-right {
     width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+// ******** A PROPOS ********
+section.a-propos {
+  background: $white2;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    margin-top: -12px;
+    padding: 12px;
+    display: block;
+    min-height: none;
+  }
+
+  .a-propos-right {
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      padding: 60px;
+      @media screen and (max-width: 800px) {
+        padding: 24px;
+      }
+    }
+  }
+  .a-propos-left {
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+// ******** CONTACT ********
+section.contact {
+  background: $white1;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    display: block;
+    min-height: none;
+  }
+
+  .contact-left {
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      padding: 60px;
+      @media screen and (max-width: 800px) {
+        padding: 24px;
+      }
+    }
+  }
+  .contact-right {
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }

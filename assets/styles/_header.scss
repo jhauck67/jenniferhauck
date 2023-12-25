@@ -9,12 +9,24 @@ header {
       width: 60%;
       padding-left: 48px;
       color: $white1;
+      @media screen and (max-width: 710px) {
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+      }
+
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        @media screen and (max-width: 1030px) {
+          font-size: 2rem;
+        }
       }
       h2 {
         color: $white2;
         line-height: 1.5em;
+        @media screen and (max-width: 1030px) {
+          font-size: 1rem;
+        }
       }
     }
     .header-right {
@@ -24,6 +36,12 @@ header {
       img {
         height: 500px;
         box-shadow: 5px 5px 5px $black2;
+        @media screen and (max-width: 1030px) {
+          height: 333px;
+        }
+      }
+      @media screen and (max-width: 710px) {
+        display: none;
       }
     }
   }

@@ -1,0 +1,42 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 24px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (max-width: 800px) {
+    display: block;
+    text-align: center;
+  }
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      width: 30%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media screen and (max-width: 560px) {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  a,
+  i,
+  p {
+    color: $white1;
+    font-size: 1rem;
+    padding: 12px;
+    @media screen and (max-width: 930px) {
+      font-size: 0.7rem;
+      padding: 18px 6px;
+    }
+  }
+}

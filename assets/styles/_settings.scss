@@ -47,21 +47,33 @@ h6 {
   font-size: 2rem;
   margin: 12px;
   padding: 12px;
+  @media screen and (max-width: 1030px) {
+    font-size: 1.33rem;
+  }
 }
 button {
   text-align: center;
   padding: 24px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: $black1;
   background: $orange;
   border-radius: 5px;
   margin: 20px 0 20px 20px;
+  @media screen and (max-width: 1030px) {
+    font-size: 0.7rem;
+    padding: 16px;
+  }
 }
 p {
   font-family: $paragraph;
+  color: $black2;
   font-size: 1rem;
+  font-weight: bold;
   line-height: 1.5em;
   margin: 12px;
   padding: 12px;
+  @media screen and (max-width: 1030px) {
+    font-size: 0.7rem;
+  }
 }
