@@ -8,21 +8,14 @@ section.portfolio {
   background: $white1;
   width: 90%;
   margin: 0 auto;
-  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 800px) {
-    padding: 12px;
-    display: block;
-    min-height: none;
-  }
 
   .portfolio-left {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 50%;
-      margin: 0 auto;
+    @media screen and (max-width: 620px) {
+      display: none;
     }
 
     img {
@@ -31,16 +24,21 @@ section.portfolio {
       object-fit: cover;
       object-position: center;
       padding: 60px;
-      @media screen and (max-width: 800px) {
-        padding: 24px;
+      @media screen and (max-width: 770px) {
+        padding: 30px;
       }
     }
   }
   .portfolio-right {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 90%;
+    padding-right: 60px;
+    @media screen and (max-width: 770px) {
+      padding-right: 30px;
+    }
+    @media screen and (max-width: 620px) {
+      width: 85%;
       margin: 0 auto;
+      padding: 0;
       text-align: center;
     }
   }
@@ -50,22 +48,14 @@ section.a-propos {
   background: $white2;
   width: 90%;
   margin: 0 auto;
-  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 800px) {
-    margin-top: -12px;
-    padding: 12px;
-    display: block;
-    min-height: none;
-  }
 
   .a-propos-right {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 50%;
-      margin: 0 auto;
+    @media screen and (max-width: 620px) {
+      display: none;
     }
 
     img {
@@ -74,16 +64,21 @@ section.a-propos {
       object-fit: cover;
       object-position: center;
       padding: 60px;
-      @media screen and (max-width: 800px) {
-        padding: 24px;
+      @media screen and (max-width: 620px) {
+        padding: 30px;
       }
     }
   }
   .a-propos-left {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 90%;
+    padding-left: 60px;
+    @media screen and (max-width: 770px) {
+      padding-left: 30px;
+    }
+    @media screen and (max-width: 620px) {
+      width: 85%;
       margin: 0 auto;
+      padding: 0;
       text-align: center;
     }
   }
@@ -93,20 +88,14 @@ section.contact {
   background: $white1;
   width: 90%;
   margin: 0 auto;
-  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 800px) {
-    display: block;
-    min-height: none;
-  }
 
   .contact-left {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 50%;
-      margin: 0 auto;
+    @media screen and (max-width: 620px) {
+      display: none;
     }
 
     img {
@@ -115,16 +104,21 @@ section.contact {
       object-fit: cover;
       object-position: center;
       padding: 60px;
-      @media screen and (max-width: 800px) {
-        padding: 24px;
+      @media screen and (max-width: 770px) {
+        padding: 30px;
       }
     }
   }
   .contact-right {
     width: 50%;
-    @media screen and (max-width: 800px) {
-      width: 90%;
+    padding-right: 60px;
+    @media screen and (max-width: 770px) {
+      padding-right: 30px;
+    }
+    @media screen and (max-width: 620px) {
+      width: 85%;
       margin: 0 auto;
+      padding: 0;
       text-align: center;
     }
   }
