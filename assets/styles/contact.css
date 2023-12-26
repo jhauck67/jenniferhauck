@@ -218,11 +218,11 @@ p {
     padding: 0 20px;
   }
 }
-.navbar .nav-middle ul li:nth-child(2) {
+.navbar .nav-middle ul li:nth-child(4) {
   border-bottom: 3px solid #ffa20d;
 }
 @media screen and (max-width: 535px) {
-  .navbar .nav-middle ul li:nth-child(2) {
+  .navbar .nav-middle ul li:nth-child(4) {
     border-bottom: none;
     border-left: 3px solid #ffa20d;
   }
@@ -355,6 +355,30 @@ footer .network {
   grid-area: netw;
 }
 
-.corpus {
-  min-height: 500px;
-}/*# sourceMappingURL=index-projects.css.map */
+body {
+  height: 100vh;
+  position: relative;
+}
+
+.contact {
+  background: #ecf4f9;
+  width: 85%;
+  margin: 0 auto;
+}
+.contact h1,
+.contact h2 {
+  font-family: Oswald-Medium, sans-serif;
+  font-size: 2rem;
+}
+.contact p {
+  font-family: SourceSerif4, serif;
+  font-size: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}/*# sourceMappingURL=contact.css.map */

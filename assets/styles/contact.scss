@@ -1,0 +1,30 @@
+@import "./settings";
+@import "./navbar-contact";
+@import "./footer";
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+.contact {
+  background: $white1;
+  width: 85%;
+  margin: 0 auto;
+  h1,
+  h2 {
+    font-family: $title;
+    font-size: 2rem;
+  }
+  p {
+    font-family: $paragraph;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

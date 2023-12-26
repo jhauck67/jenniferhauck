@@ -4,6 +4,7 @@ footer {
   justify-content: space-between;
   height: 100px;
   padding: 24px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
@@ -37,8 +38,14 @@ footer {
   }
   .copyright {
     grid-area: copr;
+    display: inline-flex;
     @media screen and (max-width: 620px) {
-      text-align: center;
+      justify-content: space-between;
+    }
+    p {
+      @media screen and (max-width: 620px) {
+        margin: 12px 0;
+      }
     }
   }
   .mentions-legales {

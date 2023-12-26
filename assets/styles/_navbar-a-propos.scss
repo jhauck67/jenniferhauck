@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (max-width: 760px) {
+    display: block;
+    text-align: center;
+  }
+  @media screen and (max-width: 535px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas:
+      "navlef navmid"
+      "navrig navmid";
+    text-align: center;
+  }
+
+  ul {
+    height: 100%;
+  }
+  a,
+  i {
+    color: $white1;
+    font-size: 1rem;
+  }
+  .nav-left {
+    grid-area: navlef;
+    width: 15%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    @media screen and (max-width: 760px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 535px) {
+      width: 90%;
+      margin: auto;
+      max-height: 75px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      padding: auto 12px;
+    }
+  }
+  .nav-middle {
+    grid-area: navmid;
+    width: 70%;
+    height: 100%;
+    @media screen and (max-width: 760px) {
+      width: 100%;
+      margin: 10px;
+    }
+    @media screen and (max-width: 535px) {
+      width: 90%;
+      margin: 0px auto;
+    }
+
+    &:hover li:not(:hover) {
+      border-bottom: none;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: auto;
+      height: 100%;
+      @media screen and (max-width: 535px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin: auto;
+        align-items: flex-start;
+      }
+      @media screen and (max-width: 310px) {
+        padding: 20px 6px;
+      }
+
+      li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 36px;
+        @media screen and (max-width: 535px) {
+          margin-bottom: 10px;
+          padding: 0 20px;
+        }
+
+        &:nth-child(3) {
+          border-bottom: 3px solid $orange;
+          @media screen and (max-width: 535px) {
+            border-bottom: none;
+            border-left: 3px solid $orange;
+          }
+        }
+        &:hover {
+          border-bottom: 3px solid $orange;
+        }
+        a {
+          color: $white1;
+          align-items: center;
+          @media screen and (max-width: 870px) {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  .nav-right {
+    grid-area: navrig;
+    width: 15%;
+    @media screen and (max-width: 760px) {
+      width: 25%;
+      margin: 15px auto;
+    }
+    @media screen and (max-width: 310px) {
+      margin: -20px auto 15px auto;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        padding: 6px;
+      }
+    }
+  }
+}

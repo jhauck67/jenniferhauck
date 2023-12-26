@@ -218,11 +218,11 @@ p {
     padding: 0 20px;
   }
 }
-.navbar .nav-middle ul li:nth-child(2) {
+.navbar .nav-middle ul li:nth-child(3) {
   border-bottom: 3px solid #ffa20d;
 }
 @media screen and (max-width: 535px) {
-  .navbar .nav-middle ul li:nth-child(2) {
+  .navbar .nav-middle ul li:nth-child(3) {
     border-bottom: none;
     border-left: 3px solid #ffa20d;
   }
@@ -355,6 +355,17 @@ footer .network {
   grid-area: netw;
 }
 
-.corpus {
-  min-height: 500px;
-}/*# sourceMappingURL=index-projects.css.map */
+.a-propos {
+  background: #ecf4f9;
+  width: 85%;
+  margin: 0 auto;
+}
+.a-propos h1,
+.a-propos h2 {
+  font-family: Oswald-Medium, sans-serif;
+  font-size: 2rem;
+}
+.a-propos p {
+  font-family: SourceSerif4, serif;
+  font-size: 1rem;
+}/*# sourceMappingURL=a-propos.css.map */

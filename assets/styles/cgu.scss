@@ -1,0 +1,21 @@
+@import "./settings";
+@import "./navbar-mentions-legales";
+@import "./footer";
+
+.mentions-legales-body {
+  background: $white1;
+  width: 85%;
+  margin: 0 auto;
+  h1,
+  h2 {
+    font-family: $title;
+    font-size: 2rem;
+  }
+  p {
+    font-family: $paragraph;
+    font-size: 1rem;
+    b {
+      font-weight: bold;
+    }
+  }
+}

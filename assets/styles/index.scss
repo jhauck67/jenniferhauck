@@ -6,6 +6,7 @@
 // ******** PORTFOLIO ********
 section.portfolio {
   background: $white1;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -46,6 +47,7 @@ section.portfolio {
 // ******** A PROPOS ********
 section.a-propos {
   background: $white2;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -86,6 +88,7 @@ section.a-propos {
 // ******** CONTACT ********
 section.contact {
   background: $white1;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   display: flex;
