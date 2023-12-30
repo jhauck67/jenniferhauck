@@ -51,10 +51,13 @@
     grid-template-columns: 1fr;
   }
 
+  .projet1 {
+    background: url(./project-01/img/logo-gc-100.png) center/cover;
+  }
+  .projet2 {
+    background: url(./project-02/img/banner.jpg) right/cover;
+  }
   #container {
-    &:nth-child(1) {
-      background: url(./project-01/img/logo-gc-50.png) center/cover;
-    }
     h3 {
       color: $white1;
       font-size: 1.2rem;
