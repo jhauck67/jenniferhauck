@@ -2,6 +2,52 @@
 @import "../styles/navbar-ressources";
 @import "../styles/footer";
 
-.corpus {
+.ressources {
   min-height: 500px;
+  background: $white1;
+  .ressources-container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 20px auto;
+    header {
+      display: flex;
+      padding: 20px;
+      @media screen and (max-width: 980px) {
+        display: block;
+      }
+      .header-left {
+        width: 30%;
+        @media screen and (max-width: 980px) {
+          width: 50%;
+        }
+      }
+      .header-left img {
+        width: 100%;
+        object-fit: cover;
+        margin: 0 0 0 20px;
+      }
+      .header-right h1 {
+        font-size: 2.5rem;
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+      .header-right h2 {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-weight: 1rem;
+      margin: 0 0 0 20px;
+    }
+    #astuce {
+      h4 {
+        font-size: 1rem;
+      }
+      img {
+        width: 50%;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
 }

@@ -1,0 +1,24 @@
+/* Remarques générales */
+
+.Ne-pas-oublier {
+  max-width: 1100px;
+} /* plus étendu, c'est moche ! */
+
+.Utiliser {
+  cursor: pointer;
+} /* pour montrer que c'est cliquable */
+
+.Element-a-decaler {
+  transform: translate(0 0 0);
+} /* pour décaler un élément suivant les 3 dimentions */
+
+.Element-en-block {
+  width: 85%;
+  margin: 0 auto;
+} /* permet de centrer l'élément en block */
+
+.Parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /*permet d'aligner des éléments sur une ligne */

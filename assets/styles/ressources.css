@@ -355,6 +355,59 @@ footer .network {
   grid-area: netw;
 }
 
-.corpus {
+.ressources {
   min-height: 500px;
+  background: #ecf4f9;
+}
+.ressources .ressources-container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 20px auto;
+}
+.ressources .ressources-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+@media screen and (max-width: 980px) {
+  .ressources .ressources-container header {
+    display: block;
+  }
+}
+.ressources .ressources-container header .header-left {
+  width: 30%;
+}
+@media screen and (max-width: 980px) {
+  .ressources .ressources-container header .header-left {
+    width: 50%;
+  }
+}
+.ressources .ressources-container header .header-left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0 0 20px;
+}
+.ressources .ressources-container header .header-right h1 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .ressources .ressources-container header .header-right h1 {
+    font-size: 2rem;
+  }
+}
+.ressources .ressources-container header .header-right h2 {
+  font-size: 1.5rem;
+}
+.ressources .ressources-container p {
+  font-weight: 1rem;
+  margin: 0 0 0 20px;
+}
+.ressources .ressources-container #astuce h4 {
+  font-size: 1rem;
+}
+.ressources .ressources-container #astuce img {
+  width: 50%;
+  margin: 0 0 0 20px;
 }/*# sourceMappingURL=ressources.css.map */
