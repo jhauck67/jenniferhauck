@@ -4,4 +4,90 @@
 
 .corpus {
   min-height: 500px;
+  background: $white1;
+  h1,
+  h2,
+  p {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 {
+    width: 85%;
+    font-size: 3rem;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    text-align: center;
+    padding: 30px;
+  }
+  h2 {
+    width: 75%;
+    font-size: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+
+    text-align: center;
+    padding: 15px;
+  }
+  p {
+    color: $black2;
+  }
+}
+.galerie {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
+
+  #container {
+    &:nth-child(1) {
+      background: url(./project-01/img/logo-gc-50.png) center/cover;
+    }
+    h3 {
+      color: $white1;
+      font-size: 1.2rem;
+      margin: 0 auto;
+      text-align: center;
+      padding: 5px 0 0 0;
+    }
+    .tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p:nth-child(1) {
+        background: orangered;
+      }
+      p:nth-child(2) {
+        background: blue;
+      }
+      #tag {
+        color: $white1;
+        font-size: 0.5rem;
+        border: 1px solid $black1;
+        padding: 2px 5px;
+        border-radius: 20px;
+        margin: 5px auto 0;
+      }
+    }
+    p#desc {
+      font-size: 0.8rem;
+      color: $white1;
+      font-weight: bold;
+    }
+    a {
+      padding: 0 12px 12px;
+    }
+  }
 }
