@@ -100,7 +100,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .navbar {
     display: block;
     text-align: center;
@@ -130,7 +130,7 @@ p {
   margin: auto;
   text-align: center;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .navbar .nav-left {
     width: 25%;
   }
@@ -153,7 +153,7 @@ p {
   width: 70%;
   height: 100%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .navbar .nav-middle {
     width: 100%;
     margin: 10px;
@@ -218,11 +218,11 @@ p {
     padding: 0 20px;
   }
 }
-.navbar .nav-middle ul li:nth-child(4) {
+.navbar .nav-middle ul li:nth-child(5) {
   border-bottom: 3px solid #ffa20d;
 }
 @media screen and (max-width: 535px) {
-  .navbar .nav-middle ul li:nth-child(4) {
+  .navbar .nav-middle ul li:nth-child(5) {
     border-bottom: none;
     border-left: 3px solid #ffa20d;
   }
@@ -245,7 +245,7 @@ p {
   grid-area: navrig;
   width: 15%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .navbar .nav-right {
     width: 25%;
     margin: 15px auto;

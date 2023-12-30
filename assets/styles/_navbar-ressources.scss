@@ -62,6 +62,10 @@
       margin: 0px auto;
     }
 
+    &:hover li:not(:hover) {
+      border-bottom: none;
+    }
+
     ul {
       display: flex;
       align-items: center;
@@ -90,6 +94,13 @@
           padding: 0 20px;
         }
 
+        &:nth-child(3) {
+          border-bottom: 3px solid $orange;
+          @media screen and (max-width: 535px) {
+            border-bottom: none;
+            border-left: 3px solid $orange;
+          }
+        }
         &:hover {
           border-bottom: 3px solid $orange;
         }
