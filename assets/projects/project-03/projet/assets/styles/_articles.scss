@@ -1,0 +1,49 @@
+.articles {
+  background: $white;
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $grey;
+  @media screen and (max-width: 630px) {
+    display: block;
+  }
+
+  #container {
+    width: 50%;
+    border-right: 1px solid $grey;
+    @media screen and (max-width: 630px) {
+      width: 100%;
+      border-bottom: 1px solid $grey;
+    }
+
+    #date {
+      font-size: 0.8rem;
+      padding: 50px 0 15px;
+    }
+    h3 {
+      width: 50%;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      padding-bottom: 15px;
+    }
+    img {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+    #description {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0.6rem;
+      line-height: 1.5rem;
+      padding-bottom: 15px;
+      text-align: left;
+    }
+    .button {
+      padding: 20px 0 50px;
+    }
+  }
+}

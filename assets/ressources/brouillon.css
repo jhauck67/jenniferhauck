@@ -1,11 +1,14 @@
-/* Forcer la position d'un élément */
-.parent {
-  position: relative;
+/* Enlever le hover quand un autre élément 
+est survolé */
+.nav:hover li:not(:hover) {
+  background: none;
+  color: white;
 }
-.enfant {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+li:first-child {
+  background: white;
+  color: black;
+  &:hover {
+    background: white;
+    color: black;
+  }
 }

@@ -1,0 +1,106 @@
+.contact {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1100px;
+  background: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  label {
+    display: block;
+    text-align-last: left;
+    font-size: 0.7rem;
+    color: rgb(70, 70, 70);
+    padding: 20px;
+  }
+  input[type="text"],
+  textarea {
+    display: block;
+    width: 90%;
+    margin: 0 20px;
+    background: none;
+    border: 1px solid $grey;
+    outline: none;
+  }
+  input[type="text"] {
+    height: 40px;
+  }
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  .contact-left {
+    padding: 30px 20px;
+    width: 50%;
+    height: 100%;
+
+    border-right: 1px solid $grey;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      border-bottom: 1px solid $grey;
+    }
+
+    .button-box {
+      padding: 30px 20px 20px;
+      text-align: left;
+      #button {
+        font-family: $title;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        color: rgb(70, 70, 70);
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: 0.3s ease;
+        &:hover {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+  .contact-right {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: repeat(4, 25%);
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    label,
+    #coordonnees {
+      padding: 50px 20px;
+      text-align: left;
+      font-size: 0.7rem;
+      line-height: 2.5em;
+      color: rgb(70, 70, 70);
+      border-bottom: 1px solid $grey;
+    }
+    ul#network {
+      display: flex;
+      padding: 50px 20px;
+      justify-content: start;
+      li {
+        width: 35px;
+        height: 35px;
+        border: 1px solid $grey;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        transition: 0.3s ease;
+        &:hover {
+          background: $black;
+          i:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

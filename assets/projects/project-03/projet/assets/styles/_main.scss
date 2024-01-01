@@ -1,0 +1,72 @@
+.main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: $white;
+  border-bottom: 1px solid $grey;
+  .date {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 50px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background: $grey;
+      left: 0;
+      top: 50%;
+      @media screen and (max-width: 750px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 400px) {
+        width: 25%;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background: $grey;
+      right: 0;
+      top: 50%;
+      @media screen and (max-width: 750px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 400px) {
+        width: 25%;
+      }
+    }
+  }
+  h2 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    @media screen and (max-width: 530px) {
+      font-size: 1.2rem;
+    }
+  }
+  .description {
+    width: 50%;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding: 30px 0;
+    line-height: 2.5em;
+    @media screen and (max-width: 530px) {
+      font-size: 0.7rem;
+    }
+  }
+  img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+  .button {
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,55 @@
+// ******** FONTS ********
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+
+// ******** VARIABLES ********
+$title: Inter, sans-serif;
+$text: Merriweather, serif;
+$black: rgb(20, 20, 20);
+$white: whitesmoke;
+$grey: rgb(200, 200, 200);
+
+// ******** REGLAGES GENERAUX ********
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  font-family: $text;
+  color: $black;
+}
+body {
+  background: url(../images/bg.jpg) center/cover fixed;
+  min-height: 700px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label {
+  font-family: $title;
+  text-transform: uppercase;
+}
+#button {
+  font-size: 0.7rem;
+  border: 1px solid $black;
+  border-radius: 2px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
