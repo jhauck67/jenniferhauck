@@ -57,25 +57,37 @@
   .projet2 {
     background: url(./project-02/img/banner.jpg) right/cover;
   }
+  .projet3 {
+    background: url(./project-03/img/bg.png) center/cover;
+  }
   #container {
-    h3 {
-      color: $white1;
+    h3.white,
+    h3.black {
       font-size: 1.2rem;
       margin: 0 auto;
       text-align: center;
       padding: 5px 0 0 0;
     }
+    h3.white {
+      color: $white1;
+    }
+    h3.black {
+      color: $black1;
+    }
     .tag {
       display: flex;
       align-items: center;
       justify-content: center;
-      p:nth-child(1) {
+      p#html {
         background: orangered;
       }
-      p:nth-child(2) {
+      p#css {
         background: blue;
       }
-      #tag {
+      p#sass {
+        background: rgb(248, 71, 198);
+      }
+      .tag-dp {
         color: $white1;
         font-size: 0.5rem;
         border: 1px solid $black1;
@@ -84,9 +96,14 @@
         margin: 5px auto 0;
       }
     }
-    p#desc {
+    p#desc-white {
       font-size: 0.8rem;
       color: $white1;
+      font-weight: bold;
+    }
+    p#desc-black {
+      font-size: 0.8rem;
+      color: $black1;
       font-weight: bold;
     }
     a {

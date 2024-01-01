@@ -419,12 +419,21 @@ footer .network {
 .galerie .projet2 {
   background: url(./project-02/img/banner.jpg) right/cover;
 }
-.galerie #container h3 {
-  color: #ecf4f9;
+.galerie .projet3 {
+  background: url(./project-03/img/bg.png) center/cover;
+}
+.galerie #container h3.white,
+.galerie #container h3.black {
   font-size: 1.2rem;
   margin: 0 auto;
   text-align: center;
   padding: 5px 0 0 0;
+}
+.galerie #container h3.white {
+  color: #ecf4f9;
+}
+.galerie #container h3.black {
+  color: #0d1e26;
 }
 .galerie #container .tag {
   display: -webkit-box;
@@ -437,13 +446,16 @@ footer .network {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.galerie #container .tag p:nth-child(1) {
+.galerie #container .tag p#html {
   background: orangered;
 }
-.galerie #container .tag p:nth-child(2) {
+.galerie #container .tag p#css {
   background: blue;
 }
-.galerie #container .tag #tag {
+.galerie #container .tag p#sass {
+  background: rgb(248, 71, 198);
+}
+.galerie #container .tag .tag-dp {
   color: #ecf4f9;
   font-size: 0.5rem;
   border: 1px solid #0d1e26;
@@ -451,9 +463,14 @@ footer .network {
   border-radius: 20px;
   margin: 5px auto 0;
 }
-.galerie #container p#desc {
+.galerie #container p#desc-white {
   font-size: 0.8rem;
   color: #ecf4f9;
+  font-weight: bold;
+}
+.galerie #container p#desc-black {
+  font-size: 0.8rem;
+  color: #0d1e26;
   font-weight: bold;
 }
 .galerie #container a {
