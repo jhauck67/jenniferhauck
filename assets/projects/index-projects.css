@@ -422,6 +422,9 @@ footer .network {
 .galerie .projet3 {
   background: url(./project-03/img/bg.png) center/cover;
 }
+.galerie .projet4 {
+  background: url(./project-04/img/Resto.png) center/cover;
+}
 .galerie #container h3.white,
 .galerie #container h3.black {
   font-size: 1.2rem;
