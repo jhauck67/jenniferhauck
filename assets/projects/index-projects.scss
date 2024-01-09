@@ -63,6 +63,9 @@
   .projet4 {
     background: url(./project-04/img/Resto.png) center/cover;
   }
+  .projet5 {
+    background: url(./project-05/img/bg.png) center/cover;
+  }
   #container {
     h3.white,
     h3.black {
@@ -89,6 +92,9 @@
       }
       p#sass {
         background: rgb(248, 71, 198);
+      }
+      p#js {
+        background: yellow;
       }
       .tag-dp {
         color: $white1;

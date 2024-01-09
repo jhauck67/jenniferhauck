@@ -357,91 +357,125 @@ footer .network {
 
 .corpus {
   min-height: 500px;
-  background: #ecf4f9;
-}
-.corpus h1,
-.corpus h2,
-.corpus p {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.corpus h1 {
-  width: 85%;
-  font-size: 3rem;
-  text-align: center;
-  padding: 30px;
-}
-@media screen and (max-width: 768px) {
-  .corpus h1 {
-    font-size: 2rem;
-  }
-}
-.corpus h2 {
-  width: 75%;
-  font-size: 2rem;
-  text-align: center;
-  padding: 15px;
-}
-@media screen and (max-width: 768px) {
-  .corpus h2 {
-    font-size: 1rem;
-  }
-}
-.corpus p {
-  color: #353a3d;
+  background: url(./img/bg.png) center/cover fixed;
 }
 
-.galerie {
-  width: 85%;
+#h2-title {
+  width: 60%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  text-align: center;
+  border: 3px solid #24566b;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 5px rgba(255, 162, 13, 0.3);
 }
-@media screen and (max-width: 1024px) {
-  .galerie {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .galerie {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 680px) {
+  #h2-title {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 450px) {
-  .galerie {
-    grid-template-columns: 1fr;
+  #h2-title {
+    width: 80%;
   }
 }
-.galerie .projet1 {
-  background: url(./project-01/img/logo-gc-100.png) center/cover;
+
+@media screen and (max-width: 680px) {
+  p,
+  a {
+    font-size: 0.9rem;
+  }
 }
-.galerie .projet2 {
-  background: url(./project-02/img/banner.jpg) right/cover;
-}
-.galerie .projet3 {
-  background: url(./project-03/img/bg.png) center/cover;
-}
-.galerie .projet4 {
-  background: url(./project-04/img/Resto.png) center/cover;
-}
-.galerie .projet5 {
-  background: url(./project-05/img/bg.png) center/cover;
-}
-.galerie #container h3.white,
-.galerie #container h3.black {
-  font-size: 1.2rem;
+
+.header {
+  background: rgba(236, 244, 249, 0.85);
+  width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
+}
+@media screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+  }
+}
+.header h1 {
+  font-family: Oswald-Medium, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(255, 162, 13, 0.3);
+  font-size: 2rem;
   text-align: center;
-  padding: 5px 0 0 0;
+  border: 3px solid #24566b;
+  border-radius: 3px;
+  width: 80%;
+  margin: 0 auto 30px;
 }
-.galerie #container h3.white {
-  color: #ecf4f9;
+@media screen and (max-width: 680px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
 }
-.galerie #container h3.black {
-  color: #0d1e26;
+.header .legende {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-.galerie #container .tag {
+@media screen and (max-width: 450px) {
+  .header .legende {
+    width: 100%;
+  }
+}
+.header .legende #intitule {
+  width: 30%;
+}
+@media screen and (max-width: 750px) {
+  .header .legende #intitule {
+    width: 50%;
+  }
+}
+.header .legende #reponse {
+  width: 30%;
+}
+@media screen and (max-width: 750px) {
+  .header .legende #reponse {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header .legende {
+    display: block;
+  }
+}
+.header .legende .date {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+@media screen and (max-width: 750px) {
+  .header .legende .date {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.header .legende .technos {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,36 +486,149 @@ footer .network {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.galerie #container .tag p#html {
-  background: orangered;
+@media screen and (max-width: 750px) {
+  .header .legende .technos {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-.galerie #container .tag p#css {
-  background: blue;
+.header .legende .technos img {
+  display: block;
+  width: 20%;
+  background: #24566b;
+  margin: 0 20px;
 }
-.galerie #container .tag p#sass {
-  background: rgb(248, 71, 198);
+.header .legende .time {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
-.galerie #container .tag p#js {
-  background: yellow;
+@media screen and (max-width: 750px) {
+  .header .legende .time {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-.galerie #container .tag .tag-dp {
-  color: #ecf4f9;
-  font-size: 0.5rem;
-  border: 1px solid #0d1e26;
-  padding: 2px 5px;
-  border-radius: 20px;
-  margin: 5px auto 0;
+.header .description-container {
+  padding-bottom: 30px;
 }
-.galerie #container p#desc-white {
-  font-size: 0.8rem;
-  color: #ecf4f9;
-  font-weight: bold;
+.header .description-container p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5em;
 }
-.galerie #container p#desc-black {
-  font-size: 0.8rem;
-  color: #0d1e26;
-  font-weight: bold;
+@media screen and (max-width: 450px) {
+  .header .description-container p {
+    width: 80%;
+  }
 }
-.galerie #container a {
-  padding: 0 12px 12px;
-}/*# sourceMappingURL=index-projects.css.map */
+
+.maquettes {
+  background: rgba(179, 194, 204, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+@media screen and (max-width: 450px) {
+  .maquettes {
+    width: 100%;
+  }
+}
+.maquettes .maquettes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+.maquettes .maquettes-container img {
+  max-width: 50%;
+  max-height: 500px;
+}
+
+.difficulties-container {
+  background: rgba(236, 244, 249, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+@media screen and (max-width: 450px) {
+  .difficulties-container {
+    width: 100%;
+  }
+}
+.difficulties-container ol {
+  padding: 30px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 450px) {
+  .difficulties-container ol {
+    width: 80%;
+  }
+}
+.difficulties-container ol li {
+  list-style: square;
+  color: #353a3d;
+}
+
+.result {
+  background: rgba(179, 194, 204, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+@media screen and (max-width: 450px) {
+  .result {
+    width: 100%;
+  }
+}
+.result .result-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+.result .result-container img {
+  max-width: 50%;
+  max-height: 500px;
+}
+
+.links {
+  background: rgba(236, 244, 249, 0.85);
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .links {
+    width: 100%;
+  }
+}/*# sourceMappingURL=projet5.css.map */
