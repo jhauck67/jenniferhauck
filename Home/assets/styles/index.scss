@@ -1,0 +1,119 @@
+@import "./settings";
+@import "./navbar";
+@import "./footer";
+
+// ******** HEADER ********
+header {
+  background-image: linear-gradient(
+      191deg,
+      rgba(193, 193, 193, 0.05) 0%,
+      rgba(193, 193, 193, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 100%
+    ),
+    linear-gradient(
+      500deg,
+      rgba(240, 240, 240, 0.05) 0%,
+      rgba(240, 240, 240, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 100%
+    ),
+    linear-gradient(
+      415deg,
+      rgba(189, 189, 189, 0.05) 0%,
+      rgba(189, 189, 189, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 100%
+    ),
+    linear-gradient(
+      275deg,
+      rgba(53, 53, 53, 0.05) 0%,
+      rgba(53, 53, 53, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 98%,
+      rgba(9, 124, 163, 0) 98%,
+      rgba(9, 124, 163, 0) 100%
+    ),
+    linear-gradient(513deg, rgb(0, 16, 17), rgb(0, 16, 17));
+  height: 100vh;
+  position: relative;
+  // ******** HERO ********
+  .hero {
+    height: 100%;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .hero-container__text-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 900px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 630px) {
+          width: 100%;
+          padding: 20px;
+          background: url(../img/avatar-filtrenoir.png) right/cover;
+        }
+
+        h1 {
+          font-family: $title;
+          font-size: 3em;
+          color: $primaire;
+          @media screen and (max-width: 900px) {
+            font-size: 2em;
+          }
+        }
+        p {
+          font-size: 1.25rem;
+          line-height: 1.5em;
+          padding: 80px 0;
+          @media screen and (max-width: 900px) {
+            font-size: 0.9rem;
+          }
+        }
+        .btn-container {
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+          }
+        }
+      }
+      .hero-container__img-container {
+        width: 40%;
+        height: 500px;
+        background: url(../img/avatar.png) center/cover;
+        @media screen and (max-width: 900px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 630px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

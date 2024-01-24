@@ -1,0 +1,66 @@
+// ******** FONTS ********
+@font-face {
+  font-family: Bubblegum;
+  src: url(../fonts/BubblegumSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-VariableFont_wdth\wght.ttf);
+}
+// Variables FONTS
+$title: Bubblegum, sans-serif;
+$paragraph: OpenSans, sans-serif;
+
+// ******** COLORS ********
+// Variables COLORS
+$primaire: #097ca3;
+$secondaire: #abff4f;
+$blanc: #e0fbfc;
+$gris: #c2dfe3;
+$noir: #001011;
+
+// ******** GENERAL SETTINGS ********
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: $paragraph;
+  color: $blanc;
+}
+
+// ******** BUTTONS ********
+.btn {
+  font-family: $title;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 10px 30px;
+  margin-right: 20px;
+  border: 1px solid $noir;
+  border-radius: 10px;
+  color: $noir;
+}
+
+// ******** Button 1 ********
+.btn-primaire {
+  border: 1px solid $blanc;
+  background: $primaire;
+  color: $blanc;
+  &:hover {
+    border: 1px solid $noir;
+    background: $secondaire;
+    color: $noir;
+  }
+}
+
+// ******** Button 2 ********
+.btn-secondaire {
+  border: 1px solid $primaire;
+  color: $primaire;
+  &:hover {
+    border: 1px solid $noir;
+    background: $secondaire;
+    color: $noir;
+  }
+}
