@@ -6,7 +6,6 @@ Ceci est un espace web personnel où on retrouve une partie "Portfolio" et une p
 
 Voici les optimisations que j'aimerais apporter à mon code :
 
-- Ajouter les images sur présentation projet
 - Restucturer les dossiers du site.
 
 ## Palette de couleurs
