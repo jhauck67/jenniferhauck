@@ -130,6 +130,12 @@ nav #nav ul li:hover {
 nav #nav ul li:hover a {
   color: #abff4f;
 }
+@media screen and (max-width: 550px) {
+  nav #nav ul li {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
 nav #nav #icons {
   cursor: pointer;
   display: none;

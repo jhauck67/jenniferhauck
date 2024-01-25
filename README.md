@@ -6,8 +6,6 @@ Ceci est un espace web personnel où on retrouve une partie "Portfolio" et une p
 
 Voici les optimisations que j'aimerais apporter à mon code :
 
-- Améliorer le hover sur la version mobile dans le menu
-- Surlignage du texte en couleur secondaire
 - Ajouter les images sur présentation projet
 - Restucturer les dossiers du site.
 
