@@ -64,3 +64,11 @@ $noir: #001011;
     color: $noir;
   }
 }
+
+// ******** SELECTION ********
+p::selection,
+a::selection,
+h1::selection {
+  background: $secondaire;
+  color: $noir;
+}

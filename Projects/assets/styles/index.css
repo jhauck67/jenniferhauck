@@ -50,6 +50,18 @@
   color: #001011;
 }
 
+p::-moz-selection, a::-moz-selection, h1::-moz-selection {
+  background: #abff4f;
+  color: #001011;
+}
+
+p::selection,
+a::selection,
+h1::selection {
+  background: #abff4f;
+  color: #001011;
+}
+
 nav {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 124, 163, 0.5)), color-stop(95%, rgba(9, 124, 163, 0)));
   background: linear-gradient(180deg, rgba(9, 124, 163, 0.5) 0%, rgba(9, 124, 163, 0) 95%);
@@ -121,7 +133,7 @@ nav #nav ul:hover li:not(:hover) {
 nav #nav ul li {
   padding: 15px 0;
 }
-nav #nav ul li:nth-child(1) {
+nav #nav ul li:nth-child(2) {
   border-bottom: 2px solid #abff4f;
 }
 nav #nav ul li:hover {
