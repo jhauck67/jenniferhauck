@@ -6,8 +6,6 @@ Ceci est un espace web personnel où on retrouve une partie "Portfolio" et une p
 
 Voici les optimisations que j'aimerais apporter à mon code :
 
-- Restucturer les dossiers du site.
-- Revoir la navbar, font-size plus petite en desktop. 
 
 ## Palette de couleurs
 
