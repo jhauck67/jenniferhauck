@@ -1,0 +1,90 @@
+// ******** NAVBAR ********
+nav {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 124, 163, 0.5) 0%,
+    rgba(9, 124, 163, 0) 95%
+  );
+  height: 50px;
+  width: 100%;
+  #nav {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    @media screen and (max-width: 650px) {
+      font-size: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      img {
+        height: 40px;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      &:hover li:not(:hover) {
+        border: none;
+      }
+      @media screen and (max-width: 550px) {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -300%;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        background: rgba(9, 124, 163, 0) 95%;
+        text-align: center;
+        transition: 0.25s;
+      }
+      li {
+        padding: 15px 0;
+        &:hover {
+          border-bottom: 2px solid $secondaire;
+          a {
+            color: $secondaire;
+          }
+        }
+        @media screen and (max-width: 550px) {
+          width: 20%;
+          margin: 0 auto;
+        }
+      }
+    }
+    #icons {
+      cursor: pointer;
+      display: none;
+      @media screen and (max-width: 550px) {
+        display: block;
+        &:before {
+          content: "\2630";
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  #nav.active {
+    ul {
+      @media screen and (max-width: 550px) {
+        top: 50px;
+      }
+    }
+    #icons {
+      @media screen and (max-width: 550px) {
+        &:before {
+          content: "\2715";
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

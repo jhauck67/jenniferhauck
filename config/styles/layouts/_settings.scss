@@ -1,0 +1,40 @@
+// ******** FONTS ********
+@font-face {
+  font-family: "Bubblegum";
+  src: url(../../../../../config/fonts/BubblegumSans-Regular.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../../../../../config/fonts/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+// ******** Variables FONTS ********
+$title: Bubblegum, sans-serif;
+$paragraph: OpenSans, sans-serif;
+
+// ******** COLORS ********
+// Variables COLORS
+$primaire: #097ca3;
+$secondaire: #abff4f;
+$blanc: #e0fbfc;
+$gris: #c2dfe3;
+$noir: #001011;
+
+// ******** GENERAL SETTINGS ********
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: $paragraph;
+  color: $blanc;
+}
+
+// ******** SELECTION ********
+p::selection,
+a::selection,
+h1::selection {
+  background: $secondaire;
+  color: $noir;
+}
