@@ -34,7 +34,9 @@ $noir: #001011;
 // ******** SELECTION ********
 p::selection,
 a::selection,
-h1::selection {
+h1::selection,
+h2::selection,
+h3::selection {
   background: $secondaire;
   color: $noir;
 }

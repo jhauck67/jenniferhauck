@@ -228,160 +228,95 @@ footer .footer-container .networks ul li a i {
 }
 
 body {
-  background-image: linear-gradient(191deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(185, 185, 185, 0.05) 27%, rgba(185, 185, 185, 0.05) 66%, rgba(83, 83, 83, 0.05) 66%, rgba(83, 83, 83, 0.05) 100%), linear-gradient(500deg, rgba(240, 240, 240, 0.05) 0%, rgba(240, 240, 240, 0.05) 13%, rgba(231, 231, 231, 0.05) 13%, rgba(231, 231, 231, 0.05) 34%, rgba(139, 139, 139, 0.05) 34%, rgba(139, 139, 139, 0.05) 71%, rgba(112, 112, 112, 0.05) 71%, rgba(112, 112, 112, 0.05) 100%), linear-gradient(415deg, rgba(189, 189, 189, 0.05) 0%, rgba(189, 189, 189, 0.05) 47%, rgba(138, 138, 138, 0.05) 47%, rgba(138, 138, 138, 0.05) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(143, 143, 143, 0.05) 85%, rgba(143, 143, 143, 0.05) 100%), linear-gradient(275deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(9, 124, 163, 0) 98%, rgba(9, 124, 163, 0) 100%), linear-gradient(513deg, rgb(0, 16, 17), rgb(0, 16, 17));
+  background: -webkit-gradient(linear, left top, left bottom, from(#097ca3), to(rgba(0, 87, 255, 0.28)));
+  background: linear-gradient(180deg, #097ca3 0%, rgba(0, 87, 255, 0.28) 100%);
+  min-height: 100vh;
   position: relative;
-}
-
-header {
-  height: 100%;
 }
 
 #nav ul li:nth-child(2) {
   border-bottom: 2px solid #abff4f;
 }
 
-h1 {
+.title {
+  width: 85%;
   max-width: 1200px;
-  width: 80%;
-  margin: 100px auto;
-  margin-top: 100px;
+  margin: 50px auto;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #097ca3;
 }
-@media screen and (max-width: 500px) {
-  h1 {
-    margin: 50px auto;
-  }
-}
-@media screen and (max-width: 995px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-.tag-bar {
-  max-width: 1200px;
-  width: 85%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-}
-@media screen and (max-width: 500px) {
-  .tag-bar {
-    gap: 10px;
-  }
-}
-.tag-bar #tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #097ca3;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-animation: 0.3s;
-          animation: 0.3s;
-}
-.tag-bar #tag:hover {
-  background: #abff4f;
-  border: 1px solid #001011;
-}
-.tag-bar #tag:hover h6 {
+.title h1 {
   color: #001011;
+  text-transform: uppercase;
+  font-size: 2.4rem;
 }
-.tag-bar #tag .tag-img {
-  height: 40px;
-  width: 40px;
-  border-radius: 10px;
+.title h3 {
+  color: #001011;
+  padding: 20px 0 40px;
+  font-size: 1.2rem;
 }
-@media screen and (max-width: 1040px) {
-  .tag-bar #tag .tag-img {
-    height: 30px;
-    width: 30px;
-  }
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag .tag-img {
-    height: 20px;
-    width: 20px;
-  }
-}
-.tag-bar #tag h6 {
-  font-size: 1rem;
-  padding: 5px 40px;
-  color: #097ca3;
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag h6 {
-    font-size: 0.85rem;
-    padding: 5px 20px;
-  }
-}
-@media screen and (max-width: 715px) {
-  .tag-bar #tag h6 {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag h6 {
-    padding: 5px 10px;
-  }
+.title p {
+  color: #c2dfe3;
 }
 
-.gallery {
-  max-width: 1200px;
-  width: 85%;
-  margin: 100px auto;
+.main .main-container {
+  width: 80%;
+  margin: 50px auto;
+}
+.main .main-container .cursor-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(194, 223, 227, 0.2274509804); /* Couleur du cercle, ajuste-la selon tes préférences */
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none; /* Assure que le cercle n'interfère pas avec les interactions du curseur */
+  display: none; /* Initialement caché */
+}
+.main .main-container .convex-lens-container {
+  margin: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2vmin;
-  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 50px;
 }
-@media screen and (max-width: 500px) {
-  .gallery {
-    margin: 50px auto 100px;
-  }
+.main .main-container .convex-lens-container img {
+  width: 200px;
+  height: 200px;
 }
-.gallery::after {
-  content: "";
-  display: block;
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
+.main .main-container .convex-lens-container p {
+  color: #001011;
+  line-height: 1.5em;
 }
-.gallery li {
-  list-style-type: none;
-  height: 250px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.main .main-container .concav-lens-container {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 50px;
 }
-.gallery img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}/*# sourceMappingURL=projects.css.map */
+.main .main-container .concav-lens-container img {
+  width: 200px;
+  height: 200px;
+}
+.main .main-container .concav-lens-container p {
+  color: #001011;
+  line-height: 1.5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=mouse-effect.css.map */

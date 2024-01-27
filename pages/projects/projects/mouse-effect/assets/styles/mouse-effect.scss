@@ -1,0 +1,88 @@
+// LAYOUTS
+@import "../../../../../../config/styles/layouts/settings";
+@import "../../../../../../config/styles/layouts/navbar";
+@import "../../../../../../config/styles/layouts/footer";
+
+// COMPONENTS
+@import "../../../../../../config/styles/components/buttons";
+
+body {
+  background: linear-gradient(180deg, #097ca3 0%, rgba(0, 87, 255, 0.28) 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+#nav ul li:nth-child(2) {
+  border-bottom: 2px solid $secondaire;
+}
+
+.title {
+  width: 85%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  h1 {
+    color: $noir;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+  h3 {
+    color: $noir;
+    padding: 20px 0 40px;
+    font-size: 1.2rem;
+  }
+  p {
+    color: $gris;
+  }
+}
+
+.main {
+  .main-container {
+    width: 80%;
+    margin: 50px auto;
+    .cursor-circle {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #c2dfe33a; /* Couleur du cercle, ajuste-la selon tes préférences */
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none; /* Assure que le cercle n'interfère pas avec les interactions du curseur */
+      display: none; /* Initialement caché */
+    }
+    .convex-lens-container {
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 50px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      p {
+        color: $noir;
+        line-height: 1.5em;
+      }
+    }
+    .concav-lens-container {
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 50px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      p {
+        color: $noir;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}

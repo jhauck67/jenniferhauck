@@ -52,6 +52,6 @@ Pour toute question, suggestion ou simplement pour échanger sur le passionnant 
 
 ## Améliorations futures
 
--
--
+- Travailler sur le Javascript du projet "Mouse Effect"
+- Refaire mon CV, peut-être intégrer ici le "mousemove"
 -

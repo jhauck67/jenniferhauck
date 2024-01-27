@@ -18,14 +18,16 @@
   color: #e0fbfc;
 }
 
-p::-moz-selection, a::-moz-selection, h1::-moz-selection {
+p::-moz-selection, a::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection {
   background: #abff4f;
   color: #001011;
 }
 
 p::selection,
 a::selection,
-h1::selection {
+h1::selection,
+h2::selection,
+h3::selection {
   background: #abff4f;
   color: #001011;
 }
