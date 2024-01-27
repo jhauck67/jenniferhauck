@@ -54,4 +54,6 @@ Pour toute question, suggestion ou simplement pour échanger sur le passionnant 
 
 - Travailler sur le Javascript du projet "Mouse Effect"
 - Refaire mon CV, peut-être intégrer ici le "mousemove"
--
+- Attention à la position du footer en mobile. Vérifier le reste aussi.
+- Banniere site réseau sociaux (opengraph à revoir).
+- Retravailler le Readme.
