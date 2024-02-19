@@ -227,49 +227,17 @@ footer .footer-container .networks ul li a i {
   color: #001011;
 }
 
-body {
-  background-image: linear-gradient(191deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(185, 185, 185, 0.05) 27%, rgba(185, 185, 185, 0.05) 66%, rgba(83, 83, 83, 0.05) 66%, rgba(83, 83, 83, 0.05) 100%), linear-gradient(500deg, rgba(240, 240, 240, 0.05) 0%, rgba(240, 240, 240, 0.05) 13%, rgba(231, 231, 231, 0.05) 13%, rgba(231, 231, 231, 0.05) 34%, rgba(139, 139, 139, 0.05) 34%, rgba(139, 139, 139, 0.05) 71%, rgba(112, 112, 112, 0.05) 71%, rgba(112, 112, 112, 0.05) 100%), linear-gradient(415deg, rgba(189, 189, 189, 0.05) 0%, rgba(189, 189, 189, 0.05) 47%, rgba(138, 138, 138, 0.05) 47%, rgba(138, 138, 138, 0.05) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(143, 143, 143, 0.05) 85%, rgba(143, 143, 143, 0.05) 100%), linear-gradient(275deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(9, 124, 163, 0) 98%, rgba(9, 124, 163, 0) 100%), linear-gradient(513deg, rgb(0, 16, 17), rgb(0, 16, 17));
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #001011;
 }
 
-header {
-  height: 100%;
-}
-
-#nav ul li:nth-child(2) {
-  border-bottom: 2px solid #abff4f;
-}
-
-h1 {
-  max-width: 1200px;
-  width: 80%;
-  margin: 100px auto;
-  margin-top: 100px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #097ca3;
-}
-@media screen and (max-width: 500px) {
-  h1 {
-    margin: 50px auto;
-  }
-}
-@media screen and (max-width: 995px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-.tag-bar {
-  max-width: 1200px;
-  width: 85%;
-  margin: 0 auto;
+.container {
+  width: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,109 +247,15 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-}
-@media screen and (max-width: 500px) {
-  .tag-bar {
-    gap: 10px;
-  }
-}
-.tag-bar #tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #097ca3;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-animation: 0.3s;
-          animation: 0.3s;
-}
-.tag-bar #tag:hover {
-  background: #abff4f;
-  border: 1px solid #001011;
-}
-.tag-bar #tag:hover h6 {
-  color: #001011;
-}
-.tag-bar #tag .tag-img {
-  height: 40px;
-  width: 40px;
-  border-radius: 10px;
-}
-@media screen and (max-width: 1040px) {
-  .tag-bar #tag .tag-img {
-    height: 30px;
-    width: 30px;
-  }
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag .tag-img {
-    height: 20px;
-    width: 20px;
-  }
-}
-.tag-bar #tag h6 {
-  font-size: 1rem;
-  padding: 5px 40px;
-  color: #097ca3;
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag h6 {
-    font-size: 0.85rem;
-    padding: 5px 20px;
-  }
-}
-@media screen and (max-width: 715px) {
-  .tag-bar #tag h6 {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 995px) {
-  .tag-bar #tag h6 {
-    padding: 5px 10px;
-  }
+  padding: 50px 8%;
 }
 
 .gallery {
-  max-width: 1200px;
-  width: 85%;
-  margin: 100px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2vmin;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
 }
-@media screen and (max-width: 500px) {
-  .gallery {
-    margin: 50px auto 100px;
-  }
-}
-.gallery::after {
-  content: "";
-  display: block;
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
-}
-.gallery li {
-  list-style-type: none;
-  height: 250px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
+
 .gallery img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=projects.css.map */
