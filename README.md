@@ -1,6 +1,6 @@
 # MON ESPACE PERSONNEL : jenniferhauck.fr
 
-![Bannière du Projet](config/images/github-profile.png)
+![Bannière du Projet](config/images/opengraph.png)
 
 Découvrez l'intersection fascinante de la technologie, du design et de l'optique. Parcourez mes projets de développement, explorez le style unique de la lunetterie, et restez informé avec des articles sur la tech et la vision.
 
@@ -46,6 +46,6 @@ Voici les informations sur le design de ce site, y compris la palette de couleur
 Pour toute question, suggestion ou simplement pour échanger sur le passionnant croisement de la tech et de l'optique, n'hésitez pas à me contacter. Vos retours sont les bienvenus pour améliorer continuellement cette expérience visuelle et informative.
 
 - **Email :** [jenniferhauck2017@gmail.com](mailto:jenniferhauck2017@gmail.com)
-- **Facebook :** [Jennifer Hauck](https://www.facebook.com/jhauckpadowicz)
-- **Instagram :** [Jennifer Hauck](https://www.instagram.com/jhauckpadowicz/)
-- **Linkedin :** [Jennifer Hauck](https://www.linkedin.com/in/jennifer-hauck-b125252a2/)
+- **Facebook :** [Profil Facebook : Jennifer Hauck](https://www.facebook.com/jhauckpadowicz)
+- **Instagram :** [Profil Instagram : Jennifer Hauck](https://www.instagram.com/jhauckpadowicz/)
+- **Linkedin :** [Profil Linkedin : Jennifer Hauck](https://www.linkedin.com/in/jennifer-hauck-b125252a2/)
