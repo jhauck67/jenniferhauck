@@ -1,90 +1,144 @@
-// ******** NAVBAR ********
-nav {
-  background: linear-gradient(
-    180deg,
-    rgba(9, 124, 163, 0.5) 0%,
-    rgba(9, 124, 163, 0) 95%
-  );
-  height: 50px;
-  width: 100%;
-  #nav {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(9, 124, 163, 0.25);
+  backdrop-filter: blur(10px);
+  height: 60px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  .logo {
+    font-family: $title;
+    font-size: 2rem;
+    color: $blanc;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    img {
+      height: 32px;
+      padding-right: 10px;
+    }
+  }
+  .navbar {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5rem;
-    @media screen and (max-width: 650px) {
-      font-size: 1rem;
+    .logo,
+    .divider {
+      display: none;
     }
-    .logo {
+    a {
+      color: $blanc;
+      font-family: $title;
+      font-size: 2rem;
+      padding: 0 20px;
+      transition: 300ms;
+      border-radius: 99px;
+      &:hover {
+        background: $gris;
+        color: $noir;
+      }
+    }
+  }
+  .networks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
       display: flex;
       align-items: center;
-      justify-content: start;
-      img {
-        height: 40px;
-      }
-    }
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 60%;
-      &:hover li:not(:hover) {
-        border: none;
-      }
-      @media screen and (max-width: 550px) {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -300%;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        background: rgba(9, 124, 163, 0) 95%;
-        text-align: center;
-        transition: 0.25s;
-      }
-      li {
-        padding: 15px 0;
-        &:hover {
-          border-bottom: 2px solid $secondaire;
-          a {
-            color: $secondaire;
-          }
-        }
-        @media screen and (max-width: 550px) {
-          width: 20%;
-          margin: 0 auto;
-        }
-      }
-    }
-    #icons {
-      cursor: pointer;
-      display: none;
-      @media screen and (max-width: 550px) {
-        display: block;
-        &:before {
-          content: "\2630";
-          font-size: 2rem;
+      justify-content: center;
+      color: $blanc;
+      font-family: $title;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+      transition: 300ms;
+      border-radius: 99px;
+      &:hover {
+        background: $gris;
+        i {
+          color: $noir;
         }
       }
     }
   }
-  #nav.active {
-    ul {
-      @media screen and (max-width: 550px) {
-        top: 50px;
+  #icons {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+// *TABLETTE
+@media screen and (max-width: 800px) {
+  #nav {
+    width: 100%;
+    .logo-container {
+      img {
+        display: none;
+      }
+    }
+    .navbar {
+      position: absolute;
+      left: -100%;
+      top: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: rgba(9, 124, 163, 1);
+      height: 100vh;
+      width: 30%;
+      padding: 20px;
+      gap: 16px;
+      transition: 300ms;
+      .logo {
+        margin-left: 0;
+        margin-top: 0;
+        display: block;
+      }
+      .divider {
+        background: $gris;
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
       }
     }
     #icons {
-      @media screen and (max-width: 550px) {
-        &:before {
-          content: "\2715";
-          font-size: 2rem;
-        }
+      display: block;
+      &::before {
+        content: "\2630";
+        font-size: 2rem;
+        color: $blanc;
       }
+    }
+  }
+  #nav.active {
+    .navbar {
+      left: -20px;
+    }
+    #icons::before {
+      content: "\2715";
+      font-size: 2rem;
+      color: $blanc;
+    }
+  }
+}
+
+// *MOBILE
+@media screen and (max-width: 450px) {
+  #nav {
+    a {
+      font-size: 1rem;
     }
   }
 }

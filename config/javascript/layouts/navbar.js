@@ -1,4 +1,4 @@
-const links = document.querySelectorAll("nav li");
+const links = document.querySelectorAll(".navbar a");
 
 
 icons.addEventListener("click", () => {

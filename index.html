@@ -1,120 +1,89 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                       JHAUCK67 - ESPACE PERSONNEL                       -->
+<!-- ----------------------------------------------------------------------- -->
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- LIENS ET META-DESCRIPTIONS -->
+  <!-- -------------------------------- HEAD --------------------------------- -->
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Accueil | jenniferhauck.fr Mon espace personnel dédié au développement web
-      et l'UX/UI design sur fond d'optique-lunetterie
-    </title>
     <meta
       name="description"
       content="jenniferhauck.fr est un espace créé pour allier mes deux passions : le développement web et l'optique-lunetterie. Découvrez mes projets web à la lumière de l'optique et des lunettes."
     />
-    <link rel="stylesheet" href="./pages/home/assets/styles/index.css" />
+
+    <!-- DETAILS DE L'ONGLET -->
+    <title>
+      Accueil | jenniferhauck.fr Mon espace personnel dédié au développement web
+      et l'UX/UI design sur fond d'optique-lunetterie
+    </title>
     <link
       rel="shortcut icon"
-      href="./config/images/favicon.ico"
+      href="./config/images/favicon.png"
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="./config/images/webclip.png" />
+
+    <!-- FEUILLE DE STYLE CSS -->
+    <link rel="stylesheet" href="./pages/home/assets/styles/index.css" />
+
+    <!-- FEUILLE DE STYLE - FONTAWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- OpenGraph -->
+
+    <!-- OPENGRAPH -->
+    <meta property="og:title" content="Accueil | jenniferhauck.fr" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mon espace personnel : Jennifer Hauck" />
-    <meta property="og:url" content="https://jenniferhauck.fr" />
-    <meta property="og:image" content="./config/images/opengraph.png" />
     <meta
-      property="og:type"
-      content="jenniferhauck.fr est un espace créé pour allier mes deux passions : le développement web et l'optique-lunetterie. Découvrez mes projets web à la lumière de l'optique et des lunettes."
+      property="og:url"
+      content="https://jhauck67.github.io/jenniferhauck/index.html"
     />
+    <meta property="og:image" content="./config/images/opengraph.png" />
   </head>
-  <!-- DEBUT DU SITE WEB -->
+
+  <!-- -------------------------------- BODY --------------------------------- -->
   <body>
-    <!-- HEADER -->
-    <header>
-      <!-- NAVBAR -->
-      <nav>
-        <div id="nav">
-          <div class="logo">
-            <img src="./config/images/logo.png" alt="logo lunettes" />
-          </div>
-          <ul class="navigation">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="./pages/projects/projects.html">Projets</a></li>
-            <li><a href="./pages/contents/blog.html">Blog</a></li>
-          </ul>
-          <div id="icons"></div>
-        </div>
-      </nav>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-container__text-container">
-            <h1>Mon nom est Jennifer.</h1>
-            <p class="hero-container">
-              Bienvenue sur mon espace où le développement web rencontre
-              l'optique-lunetterie.
-            </p>
-            <div class="btn-container">
-              <a href="./pages/projects/projects.html" class="btn btn-primaire"
-                >Découvrir mes projets</a
-              >
-              <a href="./pages/contents/blog.html" class="btn btn-secondaire"
-                >Lire mon blog</a
-              >
-            </div>
-          </div>
-          <div class="hero-container__img-container"></div>
-        </div>
-      </section>
-    </header>
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-container">
-        <p class="footer">&copy;2024 jhauck67</p>
-        <div class="networks">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/jhauckpadowicz/" target="_blank"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/jhauckpadowicz/"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jennifer-hauck-b125252a2/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/jhauck67/jenniferhauck"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:jenniferhauck2017@gmail.com"
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 NAVBAR                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="nav">
+      <!-- ! : #nav à relier dans le code js-->
+      <!-- LOGO -->
+      <div class="logo-container">
+        <img
+          src="./config/images/logo.png"
+          alt="logo représentant une paire de lunettes et où les yeux représentent l'aspect développement web"
+        />
+        <p class="logo">jhauck67</p>
       </div>
-    </footer>
-    <!-- LIENS JAVASCRIPT -->
+      <!-- NAV -->
+      <nav class="navbar">
+        <p class="logo">jhauck67</p>
+        <div class="divider"></div>
+        <!-- TODO : ne pas oublier de relier les anchors -->
+        <a href="#">Accueil</a>
+        <a href="#">Projets</a>
+        <a href="#">Blog</a>
+      </nav>
+      <!-- NETWORKS -->
+      <div class="networks">
+        <!-- TODO : ne pas oublier les anchors -->
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <!-- ICONS -->
+      <div class="icons" id="icons"></div>
+      <!-- ! : #icon à relier dans le code js-->
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               JAVASCRIPT                                -->
+    <!-- ----------------------------------------------------------------------- -->
     <script src="./config/javascript/layouts/navbar.js"></script>
   </body>
 </html>
