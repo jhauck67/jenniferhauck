@@ -1,0 +1,12 @@
+/* -------------------------------------------------------------------------- */
+/*                                    LINKS                                   */
+/* -------------------------------------------------------------------------- */
+.link {
+  text-decoration: underline;
+  font-family: $paragraph;
+  color: $noir;
+  &:hover {
+    color: #abff4f;
+    text-shadow: 1px 1px 10px $noir;
+  }
+}

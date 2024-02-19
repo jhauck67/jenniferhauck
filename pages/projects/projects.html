@@ -1,165 +1,199 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                  JHAUCK67 - ESPACE PERSONNEL - PROJETS                  -->
+<!-- ----------------------------------------------------------------------- -->
 <!DOCTYPE html>
 <html lang="fr">
-  <!-- LIENS ET META-DESCRIPTIONS -->
+  <!-- -------------------------------- HEAD --------------------------------- -->
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Mes Projets | jenniferhauck.fr Mon espace personnel dédié au développement
-      web et l'UX/UI design sur fond d'optique-lunetterie
-    </title>
     <meta
       name="description"
-      content="Des intégrations, des applications et des jeux, venez découvrir mes projets web."
+      content="jenniferhauck.fr est un espace créé pour allier mes deux passions : le développement web et l'optique-lunetterie. Découvrez mes projets web à la lumière de l'optique et des lunettes."
     />
-    <link rel="stylesheet" href="./assets/styles/projects.css" />
+
+    <!-- DETAILS DE L'ONGLET -->
+    <title>
+      Projets | Mes Projets de Développement Web : Explorez Mon Portefeuille
+      Numérique
+    </title>
     <link
       rel="shortcut icon"
-      href="../../config/images/favicon.ico"
+      href="../../config/images/favicon.png"
       type="image/x-icon"
     />
-    <link rel="apple-touch-icon" href="../../config/images/webclip.png" />
+    <link rel="apple-touch-icon" href="../../config/images/favicon.png" />
+
+    <!-- FEUILLE DE STYLE CSS -->
+    <link rel="stylesheet" href="./assets/styles/projects.css" />
+    <link rel="stylesheet" href="./assets/styles/lightbox.css" />
+
+    <!-- FEUILLE DE STYLE - FONTAWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- OpenGraph -->
+
+    <!-- OPENGRAPH -->
+    <meta property="og:title" content="Projets | jenniferhauck.fr" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mon espace personnel : Jennifer Hauck" />
-    <meta property="og:url" content="https://jenniferhauck.fr" />
-    <meta property="og:image" content="../../config/images/opengraph.png" />
     <meta
-      property="og:type"
-      content="jenniferhauck.fr est un espace créé pour allier mes deux passions : le développement web et l'optique-lunetterie. Découvrez mes projets web à la lumière de l'optique et des lunettes."
+      property="og:url"
+      content="https://jhauck67.github.io/jenniferhauck/pages/projects/projects.html"
     />
+    <meta property="og:image" content="../../config/images/opengraph.png" />
   </head>
-  <!-- DEBUT DU SITE WEB -->
+
+  <!-- -------------------------------- BODY --------------------------------- -->
   <body>
-    <!-- HEADER -->
-    <header>
-      <!-- NAVBAR -->
-      <nav>
-        <div id="nav">
-          <div class="logo">
-            <img src="../../config/images/logo.png" alt="logo lunettes" />
-          </div>
-          <ul class="navigation">
-            <li><a href="../../index.html">Accueil</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="../contents/blog.html">Blog</a></li>
-          </ul>
-          <div id="icons"></div>
-        </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 NAVBAR                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="nav">
+      <!-- LOGO -->
+      <div class="logo-container">
+        <img
+          src="../../config/images/logo.png"
+          alt="logo représentant une paire de lunettes et où les yeux représentent l'aspect développement web"
+        />
+        <p class="logo">jhauck67</p>
+      </div>
+      <!-- NAV -->
+      <nav class="navbar">
+        <p class="logo">jhauck67</p>
+        <div class="divider"></div>
+        <!-- TODO : ne pas oublier de relier les anchors -->
+        <a href="#">Accueil</a>
+        <a href="#">Projets</a>
+        <a href="#">Blog</a>
       </nav>
-      <h1>Mes projets développement et design WEB</h1>
-    </header>
-    <!-- TAG-BAR -->
-    <div class="tag-bar">
-      <div id="tag" class="html-css-tag">
-        <img
-          src="./assets/images/logo-html-css.png"
-          alt="logo HTML/CSS"
-          class="tag-img"
-        />
-        <h6>HTML/CSS</h6>
+      <!-- NETWORKS -->
+      <div class="networks">
+        <!-- TODO : ne pas oublier les anchors -->
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
       </div>
-      <div id="tag" class="sass-tag">
-        <img
-          src="./assets/images/logo-sass.png"
-          alt="logo SASS"
-          class="tag-img"
-        />
-        <h6>SASS</h6>
-      </div>
-      <div id="tag" class="javascript-tag">
-        <img
-          src="./assets/images/logo-javascript.png"
-          alt="logo JAVASCRIPT"
-          class="tag-img"
-        />
-        <h6>JAVASCRIPT</h6>
-      </div>
-      <div id="tag" class="react-tag">
-        <img
-          src="./assets/images/logo-react.png"
-          alt="logo REACT"
-          class="tag-img"
-        />
-        <h6>REACT</h6>
-      </div>
-      <div id="tag" class="integration-tag">
-        <img
-          src="./assets/images/logo-integration.png"
-          alt="logo INTEGRATION"
-          class="tag-img"
-        />
-        <h6>INTEGRATION</h6>
-      </div>
-      <div id="tag" class="app-tag">
-        <img
-          src="./assets/images/logo-app.png"
-          alt="logo APPS"
-          class="tag-img"
-        />
-        <h6>APPS</h6>
-      </div>
-      <div id="tag" class="jeux-tag">
-        <img
-          src="./assets/images/logo-jeux.png"
-          alt="logo JEUX"
-          class="tag-img"
-        />
-        <h6>JEUX</h6>
-      </div>
+      <!-- ICONS -->
+      <div class="icons" id="icons"></div>
     </div>
-    <!-- GALLERY -->
-    <ul class="gallery">
-      <li><img src="./assets/images/img-1.jpg" alt="" /></li>
-      <li><img src="./assets/images/img-2.jpg" alt="" /></li>
-      <li><img src="./assets/images/img-3.jpg" alt="" /></li>
-    </ul>
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-container">
-        <p class="footer">&copy;2024 jhauck67</p>
-        <div class="networks">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/jhauckpadowicz/" target="_blank"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/jhauckpadowicz/"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jennifer-hauck-b125252a2/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/jhauck67/jenniferhauck"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:jenniferhauck2017@gmail.com"
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header>
+      <!-- --------------------------- TEXT-CONTAINER ---------------------------- -->
+      <div class="text-container">
+        <h1>Découvrez Mon Parcours de Développeur Web à Travers Mes Projets</h1>
+        <p>
+          Découvrez une sélection de projets soigneusement élaborés qui
+          témoignent de mon parcours d'apprentissage en développement web.
+          Chaque projet représente une étape importante dans mon cheminement,
+          reflétant non seulement mes compétences techniques croissantes, mais
+          aussi ma passion et mon engagement envers cet univers en constante
+          évolution. Explorez ces réalisations avec moi, et plongez dans
+          l'univers captivant du développement web à travers les défis relevés,
+          les solutions innovantes et les succès obtenus.
+        </p>
+      </div>
+      <!-- ------------------------------ CONTAINER ------------------------------ -->
+      <div class="container">
+        <div class="gallery">
+          <div>
+            <h4>Projet 1</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 1</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
+          <div>
+            <h4>Projet 2</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 2</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
+          <div>
+            <h4>Projet 3</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 3</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
+          <div>
+            <h4>Projet 4</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 4</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
+          <div>
+            <h4>Projet 5</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 5</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
+          <div>
+            <h4>Projet 6</h4>
+            <a href="./projects/mouse-effect/index.html" class="link"
+              >Voir les détails du projet</a
+            >
+            <a
+              href="./assets/images/sacha.gif"
+              data-lightbox="models"
+              data-title="<a href='./assets/images/img-1.jpg'>Voir le Projet 6</a>"
+            >
+              <img src="./assets/images/sacha.gif" />
+            </a>
+          </div>
         </div>
       </div>
+    </header>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+      <p>&copy; 2024 Jhauck67</p>
     </footer>
-    <!-- LIEN JAVASCRIPT -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               JAVASCRIPT                                -->
+    <!-- ----------------------------------------------------------------------- -->
     <script src="../../config/javascript/layouts/navbar.js"></script>
+    <script src="./assets/javascript/lightbox-plus-jquery.js"></script>
   </body>
 </html>

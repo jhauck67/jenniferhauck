@@ -39,21 +39,6 @@ $noir: #001011;
   color: $blanc;
 }
 
-// *BACKGROUND
-body {
-  background-image: linear-gradient(352deg, #097ca340, #097ca3);
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
-  #avatar {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 50vh;
-  }
-}
-
 // *SELECTION
 p::selection,
 a::selection,
