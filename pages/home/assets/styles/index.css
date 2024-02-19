@@ -34,6 +34,12 @@ body {
   height: 100vh;
   padding: 20px;
 }
+body #avatar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50vh;
+}
 
 p::-moz-selection, a::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection {
   background: #c2dfe3;
@@ -49,6 +55,14 @@ h3::selection {
   color: #001011;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 450px) {
+  body #avatar {
+    height: 40vh;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
 /* -------------------------------------------------------------------------- */
@@ -115,7 +129,7 @@ h3::selection {
   border-radius: 99px;
 }
 #nav .navbar a:hover {
-  background: #c2dfe3;
+  background: #abff4f;
   color: #001011;
 }
 #nav .networks {
@@ -148,7 +162,7 @@ h3::selection {
   border-radius: 99px;
 }
 #nav .networks a:hover {
-  background: #c2dfe3;
+  background: #abff4f;
 }
 #nav .networks a:hover i {
   color: #001011;
@@ -169,6 +183,7 @@ h3::selection {
   }
   #nav .navbar {
     position: absolute;
+    z-index: 1000;
     left: -100%;
     top: -20px;
     display: -webkit-box;
@@ -218,205 +233,177 @@ h3::selection {
     color: #e0fbfc;
   }
 }
-@media screen and (max-width: 450px) {
-  #nav a {
-    font-size: 1rem;
+@media screen and (max-width: 560px) {
+  #nav .logo {
+    font-size: 1.2rem;
+  }
+  #nav .navbar {
+    width: 40%;
+  }
+  #nav .navbar .logo {
+    font-size: 1.2rem;
+  }
+  #nav .navbar a {
+    font-size: 1.2rem;
+  }
+  #nav .networks i {
+    font-size: 1.2rem;
+  }
+  #nav #icons::before {
+    font-size: 1.2rem;
   }
 }
-footer {
-  width: 100%;
-  text-align: center;
-  height: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 124, 163, 0)), color-stop(0.01%, rgba(9, 124, 163, 0.1)), to(rgba(9, 124, 163, 0.5)));
-  background: linear-gradient(180deg, rgba(9, 124, 163, 0) 0%, rgba(9, 124, 163, 0.1) 0.01%, rgba(9, 124, 163, 0.5) 100%);
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header .text-container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-75%, -50%);
+          transform: translate(-75%, -50%);
 }
-footer .footer-container {
-  width: 85%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer .footer-container p {
-  font-size: 0.7rem;
-}
-footer .footer-container .networks ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  height: 100%;
-}
-footer .footer-container .networks ul li {
-  padding: 10px;
-}
-footer .footer-container .networks ul li:hover a i {
-  color: #abff4f;
-}
-footer .footer-container .networks ul li a i {
-  font-size: 1.1rem;
-}
-@media screen and (max-width: 900px) {
-  footer .footer-container .networks ul li a i {
-    font-size: 0.8rem;
-  }
-}
-
-.btn {
+header .text-container h1 {
+  font-size: 3rem;
   font-family: Bubblegum, sans-serif;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding: 10px 30px;
-  margin-right: 20px;
-  border: 1px solid #001011;
-  border-radius: 10px;
   color: #001011;
+  padding: 20px 0;
 }
-
-.btn-primaire {
-  border: 1px solid #e0fbfc;
-  background: #097ca3;
-  color: #e0fbfc;
-}
-.btn-primaire:hover {
-  border: 1px solid #001011;
-  background: #abff4f;
-  color: #001011;
-}
-
-.btn-secondaire {
-  border: 1px solid #097ca3;
-  color: #097ca3;
-}
-.btn-secondaire:hover {
-  border: 1px solid #001011;
-  background: #abff4f;
-  color: #001011;
-}
-
-header {
-  background-image: linear-gradient(191deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(185, 185, 185, 0.05) 27%, rgba(185, 185, 185, 0.05) 66%, rgba(83, 83, 83, 0.05) 66%, rgba(83, 83, 83, 0.05) 100%), linear-gradient(500deg, rgba(240, 240, 240, 0.05) 0%, rgba(240, 240, 240, 0.05) 13%, rgba(231, 231, 231, 0.05) 13%, rgba(231, 231, 231, 0.05) 34%, rgba(139, 139, 139, 0.05) 34%, rgba(139, 139, 139, 0.05) 71%, rgba(112, 112, 112, 0.05) 71%, rgba(112, 112, 112, 0.05) 100%), linear-gradient(415deg, rgba(189, 189, 189, 0.05) 0%, rgba(189, 189, 189, 0.05) 47%, rgba(138, 138, 138, 0.05) 47%, rgba(138, 138, 138, 0.05) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(143, 143, 143, 0.05) 85%, rgba(143, 143, 143, 0.05) 100%), linear-gradient(275deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(9, 124, 163, 0) 98%, rgba(9, 124, 163, 0) 100%), linear-gradient(513deg, rgb(0, 16, 17), rgb(0, 16, 17));
-  height: 100vh;
-  position: relative;
-}
-header #nav ul li:nth-child(1) {
-  border-bottom: 2px solid #abff4f;
-}
-header .hero {
-  height: 90%;
-  width: 85%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-header .hero .hero-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .hero .hero-container .hero-container__text-container {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media screen and (max-width: 900px) {
-  header .hero .hero-container .hero-container__text-container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 630px) {
-  header .hero .hero-container .hero-container__text-container {
-    width: 100%;
-    padding: 20px;
-    background: url(../images/avatar-filtrenoir.png) right/cover;
-  }
-}
-header .hero .hero-container .hero-container__text-container h1 {
+header .text-container h2 {
+  font-size: 2rem;
   font-family: Bubblegum, sans-serif;
-  font-size: 3em;
-  color: #097ca3;
-}
-@media screen and (max-width: 900px) {
-  header .hero .hero-container .hero-container__text-container h1 {
-    font-size: 2em;
-  }
-}
-header .hero .hero-container .hero-container__text-container p {
-  font-size: 1.25rem;
-  line-height: 1.5em;
-  padding: 80px 0;
-}
-@media screen and (max-width: 900px) {
-  header .hero .hero-container .hero-container__text-container p {
-    font-size: 0.9rem;
-  }
-}
-header .hero .hero-container .hero-container__text-container .btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 900px) {
-  header .hero .hero-container .hero-container__text-container .btn-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-header .hero .hero-container .hero-container__img-container {
-  width: 40%;
-  height: 500px;
-  background: url(../images/avatar.png) center/cover;
-}
-@media screen and (max-width: 900px) {
-  header .hero .hero-container .hero-container__img-container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 630px) {
-  header .hero .hero-container .hero-container__img-container {
-    display: none;
-  }
+  color: #001011;
+  padding: 20px 0;
 }
 
-footer {
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 920px) {
+  header .text-container {
+    width: 60%;
+  }
+  header .text-container h1 {
+    font-size: 2rem;
+  }
+  header .text-container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .text-container {
+    z-index: 500;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  header .text-container h1,
+  header .text-container h2 {
+    text-align: center;
+  }
+  header .text-container .button-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  header .text-container {
+    width: 90%;
+    top: 32%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  header .text-container h1,
+  header .text-container h2 {
+    text-align: center;
+  }
+  header .text-container h1 {
+    font-size: 1.5rem;
+  }
+  header .text-container h2 {
+    font-size: 1.2rem;
+  }
+  header .text-container .button-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+footer p {
   position: absolute;
   bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #001011;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 550px) {
+  footer p {
+    color: #c2dfe3;
+    text-shadow: 2px 2px 2px #001011;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTON                                   */
+/* -------------------------------------------------------------------------- */
+.button-container {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* -------------------------------- BUTTON 1 -------------------------------- */
+  /* -------------------------------- BUTTON 2 -------------------------------- */
+}
+.button-container #btn1 {
+  margin-right: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.button-container #btn1 a {
+  font-size: 1.5rem;
+  font-family: Bubblegum, sans-serif;
+  padding: 5px 20px;
+  background: #097ca3;
+  border-radius: 99px;
+}
+.button-container #btn1:hover a {
+  background: #abff4f;
+  color: #001011;
+}
+.button-container #btn2 a {
+  font-size: 1.5rem;
+  font-family: Bubblegum, sans-serif;
+  padding: 5px 20px;
+  background: #c2dfe3;
+  color: #001011;
+  border-radius: 99px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.button-container #btn2:hover a {
+  background: #abff4f;
+  color: #001011;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 920px) {
+  .button-container #btn1 a {
+    font-size: 1rem;
+  }
+  .button-container #btn2 a {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

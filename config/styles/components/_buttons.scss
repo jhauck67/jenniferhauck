@@ -1,34 +1,58 @@
-// ******** BUTTONS ********
-.btn {
-  font-family: $title;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding: 10px 30px;
-  margin-right: 20px;
-  border: 1px solid $noir;
-  border-radius: 10px;
-  color: $noir;
-}
-
-// ******** Button 1 ********
-.btn-primaire {
-  border: 1px solid $blanc;
-  background: $primaire;
-  color: $blanc;
-  &:hover {
-    border: 1px solid $noir;
-    background: $secondaire;
-    color: $noir;
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTON                                   */
+/* -------------------------------------------------------------------------- */
+.button-container {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  /* -------------------------------- BUTTON 1 -------------------------------- */
+  #btn1 {
+    margin-right: 20px;
+    transition: 300ms;
+    a {
+      font-size: 1.5rem;
+      font-family: $title;
+      padding: 5px 20px;
+      background: $primaire;
+      border-radius: 99px;
+    }
+    &:hover {
+      a {
+        background: $secondaire;
+        color: $noir;
+      }
+    }
+  }
+  /* -------------------------------- BUTTON 2 -------------------------------- */
+  #btn2 {
+    a {
+      font-size: 1.5rem;
+      font-family: $title;
+      padding: 5px 20px;
+      background: $gris;
+      color: $noir;
+      border-radius: 99px;
+      transition: 300ms;
+    }
+    &:hover {
+      a {
+        background: $secondaire;
+        color: $noir;
+      }
+    }
   }
 }
 
-// ******** Button 2 ********
-.btn-secondaire {
-  border: 1px solid $primaire;
-  color: $primaire;
-  &:hover {
-    border: 1px solid $noir;
-    background: $secondaire;
-    color: $noir;
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 920px) {
+  .button-container {
+    #btn1 a {
+      font-size: 1rem;
+    }
+    #btn2 a {
+      font-size: 1rem;
+    }
   }
 }

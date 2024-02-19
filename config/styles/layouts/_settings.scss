@@ -46,6 +46,12 @@ body {
   width: 100%;
   height: 100vh;
   padding: 20px;
+  #avatar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50vh;
+  }
 }
 
 // *SELECTION
@@ -56,4 +62,18 @@ h2::selection,
 h3::selection {
   background: $gris;
   color: $noir;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+// *TABLETTE
+@media screen and (max-width: 800px) {
+}
+
+// *MOBILE
+@media screen and (max-width: 450px) {
+  body #avatar {
+    height: 40vh;
+  }
 }

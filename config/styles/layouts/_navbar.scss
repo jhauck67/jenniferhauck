@@ -43,7 +43,7 @@
       transition: 300ms;
       border-radius: 99px;
       &:hover {
-        background: $gris;
+        background: $secondaire;
         color: $noir;
       }
     }
@@ -63,7 +63,7 @@
       transition: 300ms;
       border-radius: 99px;
       &:hover {
-        background: $gris;
+        background: $secondaire;
         i {
           color: $noir;
         }
@@ -89,6 +89,7 @@
     }
     .navbar {
       position: absolute;
+      z-index: 1000;
       left: -100%;
       top: -20px;
       display: flex;
@@ -135,10 +136,27 @@
 }
 
 // *MOBILE
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 560px) {
   #nav {
-    a {
-      font-size: 1rem;
+    .logo {
+      font-size: 1.2rem;
+    }
+    .navbar {
+      width: 40%;
+      .logo {
+        font-size: 1.2rem;
+      }
+      a {
+        font-size: 1.2rem;
+      }
+    }
+    .networks {
+      i {
+        font-size: 1.2rem;
+      }
+    }
+    #icons::before {
+      font-size: 1.2rem;
     }
   }
 }

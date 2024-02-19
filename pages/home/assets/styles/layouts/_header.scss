@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  .text-container {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-75%, -50%);
+    h1 {
+      font-size: 3rem;
+      font-family: $title;
+      color: $noir;
+      padding: 20px 0;
+    }
+    h2 {
+      font-size: 2rem;
+      font-family: $title;
+      color: $noir;
+      padding: 20px 0;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 920px) {
+  header .text-container {
+    width: 60%;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// *TABLETTE
+@media screen and (max-width: 800px) {
+  header .text-container {
+    z-index: 500;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    h1,
+    h2 {
+      text-align: center;
+    }
+    .button-container {
+      justify-content: center;
+    }
+  }
+}
+
+// *MOBILE
+@media screen and (max-width: 560px) {
+  header .text-container {
+    width: 90%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    h1,
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    .button-container {
+      justify-content: center;
+    }
+  }
+}
