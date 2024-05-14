@@ -1,0 +1,110 @@
+//* FONTS
+@font-face {
+  font-family: "Akronim-Regular";
+  src: url(./assets/fonts/Akronim-Regular.ttf);
+}
+$logo: Akronim-Regular, sans-serif;
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+$blogbold: Merriweather-Bold, serif;
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(./assets/fonts/Merriweather-Regular.ttf);
+}
+$blog: Merriweather-Regular, serif;
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+$bodybold: Poppins-Bold, sans-serif;
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+$body: Poppins-Regular, sans-serif;
+//
+//
+// * COLORS
+// Background
+$backgroundblack: #1e1c1b;
+$backgroundwhite: #fff6f2;
+//Writing
+$black: #001219;
+$white: #f2fbff;
+//Branding
+$primary: #048abf;
+$secondary: #6cbfe0;
+//Supporting
+$redtext: #6e0101;
+$redicon: #bf0404;
+$redbutton: #e06c6c;
+$redbackground: #fff2f2;
+$orangetext: #6e3701;
+$orangeicon: #bf6104;
+$orangebutton: #e0a66c;
+$orangebackground: #fff9f2;
+$greentext: #016e01;
+$greenicon: #04bf04;
+$greenbutton: #6ce06c;
+$greenbackground: #f2fff2;
+$bluetext: #01016e;
+$blueicon: #0404bf;
+$bluebutton: #6c6ce0;
+$bluebackground: #f2f2ff;
+//
+//
+// *GENERAL SETTINGS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: $body;
+  font-size: 1rem;
+  color: $black;
+}
+*::selection {
+  background: $secondary;
+  color: $black;
+}
+body {
+  background: $backgroundwhite;
+}
+//
+//
+// *TEXT STYLES
+#logo {
+  font-family: $logo;
+  font-size: 1.2rem;
+}
+h1 {
+  font-family: $bodybold;
+  font-size: 2.2rem;
+}
+h2 {
+  font-family: $bodybold;
+  font-size: 1.9rem;
+}
+h3 {
+  font-family: $bodybold;
+  font-size: 1.6rem;
+}
+h4 {
+  font-family: $bodybold;
+  font-size: 1.3rem;
+}
+a {
+  font-family: $bodybold;
+  font-size: 1rem;
+}
+.blog-title {
+  font-family: $blogbold;
+}
+.blog-body {
+  font-family: $blog;
+}
+//
+//

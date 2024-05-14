@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Akronim-Regular";
+  src: url(./assets/fonts/Akronim-Regular.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(./assets/fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 1rem;
+  color: #001219;
+}
+
+*::-moz-selection {
+  background: #6cbfe0;
+  color: #001219;
+}
+
+*::selection {
+  background: #6cbfe0;
+  color: #001219;
+}
+
+body {
+  background: #fff6f2;
+}
+
+#logo {
+  font-family: Akronim-Regular, sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 1.3rem;
+}
+
+a {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 1rem;
+}
+
+.blog-title {
+  font-family: Merriweather-Bold, serif;
+}
+
+.blog-body {
+  font-family: Merriweather-Regular, serif;
+}/*# sourceMappingURL=index.css.map */
