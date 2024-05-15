@@ -3,20 +3,20 @@
   src: url(./assets/fonts/Akronim-Regular.ttf);
 }
 @font-face {
-  font-family: "Merriweather-Bold";
-  src: url(./assets/fonts/Merriweather-Bold.ttf);
-}
-@font-face {
-  font-family: "Merriweather-Regular";
-  src: url(./assets/fonts/Merriweather-Regular.ttf);
-}
-@font-face {
   font-family: "Poppins-Bold";
   src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
   font-family: "Poppins-Regular";
   src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(./assets/fonts/Merriweather-Regular.ttf);
 }
 * {
   margin: 0;
@@ -46,7 +46,7 @@ body {
 
 #logo {
   font-family: Akronim-Regular, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 h1 {
@@ -71,7 +71,18 @@ h4 {
 
 a {
   font-family: Poppins-Bold, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+a:hover {
+  color: #048abf;
+}
+
+i {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 1.3rem;
+}
+i:hover {
+  color: #048abf;
 }
 
 .blog-title {
@@ -80,4 +91,164 @@ a {
 
 .blog-body {
   font-family: Merriweather-Regular, serif;
+}
+
+.navbar {
+  max-width: 1200px;
+  width: 95%;
+  margin: 24px auto 96px;
+  padding: 0 16px;
+  background: #6cbfe0;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar .nav a {
+  padding: 24px 32px;
+}
+.navbar .networks i {
+  padding: 24px 8px;
+}
+.navbar .icons {
+  display: none;
+}
+
+#first-button {
+  padding: 8px 16px;
+  margin-right: 16px;
+  background: #048abf;
+  border-radius: 8px;
+}
+#first-button a {
+  color: #f2fbff;
+}
+#first-button a:hover {
+  color: #001219;
+}
+#first-button:hover {
+  background: #6cbfe0;
+}
+
+#second-button {
+  padding: 8px 16px;
+  margin-right: 16px;
+  background: #6cbfe0;
+  border-radius: 8px;
+}
+#second-button a {
+  color: #001219;
+}
+#second-button a:hover {
+  color: #f2fbff;
+}
+#second-button:hover {
+  background: #048abf;
+}
+
+.banner {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+}
+.banner img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+footer {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  background: #1e1c1b;
+  padding: 16px;
+}
+footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-top #logo {
+  color: #f2fbff;
+  font-size: 1.3rem;
+}
+footer .footer-top p {
+  color: #f2fbff;
+  font-size: 0.7rem;
+}
+footer .footer-top .networks i {
+  padding: 0 8px;
+  color: #f2fbff;
+  font-size: 1rem;
+}
+footer .footer-top .networks i:hover {
+  color: #048abf;
+}
+footer .footer-middle {
+  width: 60%;
+  margin: 32px auto;
+  height: 1px;
+  background: #fff6f2;
+}
+footer .footer-bottom a {
+  display: block;
+  text-align: center;
+  color: #f2fbff;
+  font-size: 0.7rem;
+}
+footer .footer-bottom a:hover {
+  color: #048abf;
+}
+
+.hero {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .hero-left-container {
+  width: 50%;
+  padding: 16px;
+}
+.hero .hero-left-container h1,
+.hero .hero-left-container p {
+  padding-bottom: 24px;
+}
+.hero .hero-left-container .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .hero-right-container {
+  width: 50%;
+  padding: 16px;
+}
+.hero .hero-right-container img {
+  width: 100%;
+  border-radius: 8px;
 }/*# sourceMappingURL=index.css.map */

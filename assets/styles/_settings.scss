@@ -1,19 +1,11 @@
 //* FONTS
+// Logo
 @font-face {
   font-family: "Akronim-Regular";
   src: url(./assets/fonts/Akronim-Regular.ttf);
 }
 $logo: Akronim-Regular, sans-serif;
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url(./assets/fonts/Merriweather-Bold.ttf);
-}
-$blogbold: Merriweather-Bold, serif;
-@font-face {
-  font-family: "Merriweather-Regular";
-  src: url(./assets/fonts/Merriweather-Regular.ttf);
-}
-$blog: Merriweather-Regular, serif;
+// Police sans-serif
 @font-face {
   font-family: "Poppins-Bold";
   src: url(./assets/fonts/Poppins-Bold.ttf);
@@ -24,6 +16,17 @@ $bodybold: Poppins-Bold, sans-serif;
   src: url(./assets/fonts/Poppins-Regular.ttf);
 }
 $body: Poppins-Regular, sans-serif;
+// Police serif
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(./assets/fonts/Merriweather-Bold.ttf);
+}
+$blogbold: Merriweather-Bold, serif;
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url(./assets/fonts/Merriweather-Regular.ttf);
+}
+$blog: Merriweather-Regular, serif;
 //
 //
 // * COLORS
@@ -78,7 +81,7 @@ body {
 // *TEXT STYLES
 #logo {
   font-family: $logo;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 h1 {
   font-family: $bodybold;
@@ -98,7 +101,17 @@ h4 {
 }
 a {
   font-family: $bodybold;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  &:hover {
+    color: $primary;
+  }
+}
+i {
+  font-family: $bodybold;
+  font-size: 1.3rem;
+  &:hover {
+    color: $primary;
+  }
 }
 .blog-title {
   font-family: $blogbold;

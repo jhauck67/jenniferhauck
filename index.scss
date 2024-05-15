@@ -1,2 +1,39 @@
 // *SETTINGS
 @import "./assets/styles/settings";
+@import "./assets/styles/navbar";
+@import "./assets/styles/buttons";
+@import "./assets/styles/banner";
+@import "./assets/styles/footer";
+//
+//
+// *HERO
+.hero {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero-left-container {
+    width: 50%;
+    padding: 16px;
+    h1,
+    p {
+      padding-bottom: 24px;
+    }
+    .buttons-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .hero-right-container {
+    width: 50%;
+    padding: 16px;
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+//
+//

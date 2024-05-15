@@ -1,0 +1,20 @@
+.navbar {
+  max-width: 1200px;
+  width: 95%;
+  margin: 24px auto 96px;
+  padding: 0 16px;
+  background: $secondary;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .nav a {
+    padding: 24px 32px;
+  }
+  .networks i {
+    padding: 24px 8px;
+  }
+  .icons {
+    display: none;
+  }
+}
