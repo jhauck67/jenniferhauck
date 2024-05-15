@@ -20,15 +20,15 @@
 #second-button {
   padding: 8px 16px;
   margin-right: 16px;
-  background: $secondary;
+  background: $backgroundgrey;
   border-radius: 8px;
   a {
     color: $black;
     &:hover {
-      color: $white;
+      color: $black;
     }
   }
   &:hover {
-    background: $primary;
+    background: $secondary;
   }
 }

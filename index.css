@@ -98,7 +98,7 @@ i:hover {
   width: 95%;
   margin: 24px auto 96px;
   padding: 0 16px;
-  background: #6cbfe0;
+  background: #d9d9d9;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +111,10 @@ i:hover {
           justify-content: space-between;
 }
 .navbar .nav a {
-  padding: 24px 32px;
+  padding: 16px 32px;
 }
 .navbar .networks i {
-  padding: 24px 8px;
+  padding: 16px 8px;
 }
 .navbar .icons {
   display: none;
@@ -139,17 +139,17 @@ i:hover {
 #second-button {
   padding: 8px 16px;
   margin-right: 16px;
-  background: #6cbfe0;
+  background: #d9d9d9;
   border-radius: 8px;
 }
 #second-button a {
   color: #001219;
 }
 #second-button a:hover {
-  color: #f2fbff;
+  color: #001219;
 }
 #second-button:hover {
-  background: #048abf;
+  background: #6cbfe0;
 }
 
 .banner {
