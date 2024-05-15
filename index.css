@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Akronim-Regular";
   src: url(./assets/fonts/Akronim-Regular.ttf);
@@ -93,7 +94,35 @@ i:hover {
   font-family: Merriweather-Regular, serif;
 }
 
-.navbar {
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  i {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 0.8rem;
+  }
+}
+nav {
   max-width: 1200px;
   width: 95%;
   margin: 24px auto 96px;
@@ -110,16 +139,101 @@ i:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navbar .nav a {
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .menu #logo {
+  display: none;
+}
+nav .menu a {
   padding: 16px 32px;
 }
-.navbar .networks i {
+nav .networks i {
   padding: 16px 8px;
 }
-.navbar .icons {
+nav #icons {
   display: none;
 }
 
+@media screen and (max-width: 775px) {
+  #nav {
+    margin: 12px auto 48px;
+  }
+  #nav .menu a {
+    padding: 16px 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #nav {
+    width: 100%;
+    margin: 0 auto 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #nav #logo {
+    display: block;
+    padding: 16px 12px;
+  }
+  #nav .menu {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    background: #d9d9d9;
+    height: 100vh;
+    width: 40%;
+    padding: 0 12px;
+  }
+  #nav .menu .divider {
+    background: #fff6f2;
+    width: 100%;
+    height: 1px;
+    margin: 8px 0;
+  }
+  #nav .menu a {
+    font-size: 1rem;
+  }
+  #nav .networks i {
+    font-size: 1.2rem;
+  }
+  #nav #icons {
+    display: block;
+  }
+  #nav #icons::before {
+    content: "☰";
+    font-size: 1.5rem;
+  }
+  #nav.active .menu {
+    left: 0;
+  }
+  #nav.active #icons {
+    display: block;
+  }
+  #nav.active #icons::before {
+    content: "✕";
+    font-size: 1.5rem;
+  }
+}
 #first-button {
   padding: 8px 16px;
   margin-right: 16px;
@@ -152,6 +266,11 @@ i:hover {
   background: #6cbfe0;
 }
 
+@media screen and (max-width: 600px) {
+  #first-button {
+    margin-bottom: 16px;
+  }
+}
 .banner {
   max-width: 1200px;
   width: 95%;
@@ -164,6 +283,16 @@ i:hover {
   border-radius: 8px;
 }
 
+@media screen and (max-width: 775px) {
+  .banner {
+    margin: 0 auto 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 100%;
+  }
+}
 footer {
   max-width: 1200px;
   width: 95%;
@@ -183,6 +312,7 @@ footer .footer-top {
           justify-content: space-between;
 }
 footer .footer-top #logo {
+  display: inline-block;
   color: #f2fbff;
   font-size: 1.3rem;
 }
@@ -214,10 +344,30 @@ footer .footer-bottom a:hover {
   color: #048abf;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+  }
+  footer .footer-top {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-top #logo {
+    padding-bottom: 16px;
+  }
+  footer .footer-top p {
+    padding-bottom: 16px;
+  }
+}
 .hero {
   max-width: 1200px;
   width: 95%;
   margin: 0 auto 96px;
+}
+.hero h1 {
+  display: none;
+}
+.hero .hero-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,15 +378,16 @@ footer .footer-bottom a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.hero .hero-left-container {
+.hero .hero-bottom .hero-left-container {
   width: 50%;
   padding: 16px;
 }
-.hero .hero-left-container h1,
-.hero .hero-left-container p {
+.hero .hero-bottom .hero-left-container h1,
+.hero .hero-bottom .hero-left-container p {
+  display: block;
   padding-bottom: 24px;
 }
-.hero .hero-left-container .buttons-container {
+.hero .hero-bottom .hero-left-container .buttons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,11 +395,33 @@ footer .footer-bottom a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.hero .hero-right-container {
+.hero .hero-bottom .hero-right-container {
   width: 50%;
   padding: 16px;
 }
-.hero .hero-right-container img {
+.hero .hero-bottom .hero-right-container img {
   width: 100%;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 775px) {
+  .hero {
+    margin: 0 auto 48px;
+  }
+  .hero .hero-top h1 {
+    width: 100%;
+    padding: 16px;
+    display: block;
+  }
+  .hero .hero-bottom .hero-left-container h1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .hero-bottom .hero-left-container .buttons-container {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=index.css.map */

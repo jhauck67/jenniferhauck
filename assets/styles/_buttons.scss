@@ -32,3 +32,13 @@
     background: $secondary;
   }
 }
+//
+//
+// *----------
+// *RESPONSIVE
+// *----------
+@media screen and (max-width: 600px) {
+  #first-button {
+    margin-bottom: 16px;
+  }
+}

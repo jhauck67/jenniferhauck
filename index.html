@@ -38,9 +38,11 @@
   <!---->
   <body>
     <!-- ***NAVBAR*** -->
-    <div class="navbar">
+    <nav id="nav">
       <div id="logo">&lt;/jhauck67&gt;</div>
-      <div class="nav">
+      <div class="menu">
+        <div id="logo">&lt;/jhauck67&gt;</div>
+        <div class="divider"></div>
         <a href="#">Accueil</a>
         <!-- TODO Remplir la destination du lien-->
         <a href="#">Projets</a>
@@ -58,34 +60,40 @@
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <!-- TODO Remplir la destination du lien-->
       </div>
-      <div class="icons"></div>
-    </div>
+      <div id="icons"></div>
+    </nav>
     <!---->
+
     <!-- ***HERO*** -->
     <div class="hero">
-      <div class="hero-left-container">
+      <div class="hero-top">
         <h1>Découvrez mon monde en ligne : Bienvenue sur mon site web</h1>
-        <p>
-          Explorez mon portfolio de projets de développement web, plongez dans
-          mon blog où je partage mes réflexions sur l'optique et la technologie,
-          et découvrez les multiples facettes de mon univers.
-        </p>
-        <div class="buttons-container">
-          <div id="first-button">
-            <a href="#">Voir mes projets</a>
-            <!-- TODO Remplir la destination du lien-->
-          </div>
-          <div id="second-button">
-            <a href="#">Lire mon blog</a>
-            <!-- TODO Remplir la destination du lien-->
+      </div>
+      <div class="hero-bottom">
+        <div class="hero-left-container">
+          <h1>Découvrez mon monde en ligne : Bienvenue sur mon site web</h1>
+          <p>
+            Explorez mon portfolio de projets de développement web, plongez dans
+            mon blog où je partage mes réflexions sur l'optique et la
+            technologie, et découvrez les multiples facettes de mon univers.
+          </p>
+          <div class="buttons-container">
+            <div id="first-button">
+              <a href="#">Voir mes projets</a>
+              <!-- TODO Remplir la destination du lien-->
+            </div>
+            <div id="second-button">
+              <a href="#">Lire mon blog</a>
+              <!-- TODO Remplir la destination du lien-->
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hero-right-container">
-        <img
-          src="./assets/images/hero.png"
-          alt="une image d'un ordinateur, avec une tasse à café et des lunettes"
-        />
+        <div class="hero-right-container">
+          <img
+            src="./assets/images/hero.png"
+            alt="une image d'un ordinateur, avec une tasse à café et des lunettes"
+          />
+        </div>
       </div>
     </div>
     <!---->
@@ -117,5 +125,6 @@
       </div>
     </footer>
     <!---->
+    <script src="./index.js"></script>
   </body>
 </html>

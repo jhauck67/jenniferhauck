@@ -10,3 +10,18 @@
     border-radius: 8px;
   }
 }
+//
+//
+// *----------
+// *RESPONSIVE
+// *----------
+@media screen and (max-width: 775px) {
+  .banner {
+    margin: 0 auto 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 100%;
+  }
+}

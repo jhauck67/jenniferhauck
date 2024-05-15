@@ -10,6 +10,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     #logo {
+      display: inline-block;
       color: $white;
       font-size: 1.3rem;
     }
@@ -39,6 +40,26 @@ footer {
     font-size: 0.7rem;
     &:hover {
       color: $primary;
+    }
+  }
+}
+//
+//
+// *----------
+// *RESPONSIVE
+// *----------
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    .footer-top {
+      display: block;
+      text-align: center;
+      #logo {
+        padding-bottom: 16px;
+      }
+      p {
+        padding-bottom: 16px;
+      }
     }
   }
 }
