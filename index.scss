@@ -6,6 +6,19 @@
 @import "./assets/styles/footer";
 //
 //
+// *NAV
+nav {
+  .menu {
+    &:hover a:not(:hover) {
+      color: $black;
+    }
+    a:first-of-type {
+      color: $primary;
+    }
+  }
+}
+//
+//
 // *HERO
 .hero {
   max-width: 1200px;
