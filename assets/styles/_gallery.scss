@@ -1,0 +1,52 @@
+// *GALLERY
+.gallery-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  .card-container {
+    padding: 16px;
+    img {
+      width: 100%;
+      padding-bottom: 16px;
+      border-radius: 8px;
+    }
+    .tagline {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      background: $secondary;
+      border-radius: 48px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .bold {
+      font-family: $bodybold;
+      padding-bottom: 24px;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+//
+// *----------
+// *RESPONSIVE
+// *----------
+@media screen and (max-width: 1100px) {
+  .gallery-container {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

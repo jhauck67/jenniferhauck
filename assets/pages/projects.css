@@ -271,6 +271,54 @@ nav #icons {
     margin-bottom: 16px;
   }
 }
+.gallery-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+.gallery-container .card-container {
+  padding: 16px;
+}
+.gallery-container .card-container img {
+  width: 100%;
+  padding-bottom: 16px;
+  border-radius: 8px;
+}
+.gallery-container .card-container .tagline {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  background: #6cbfe0;
+  border-radius: 48px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.gallery-container .card-container .bold {
+  font-family: Poppins-Bold, sans-serif;
+  padding-bottom: 24px;
+}
+.gallery-container .card-container a {
+  color: #048abf;
+}
+.gallery-container .card-container a:hover {
+  color: #6cbfe0;
+}
+
+@media screen and (max-width: 1100px) {
+  .gallery-container {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
 .banner {
   max-width: 1200px;
   width: 95%;
@@ -411,48 +459,6 @@ nav .menu a:nth-of-type(2) {
   border-radius: 8px;
 }
 
-.gallery-container {
-  max-width: 1200px;
-  width: 95%;
-  margin: 0 auto 96px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 24px;
-}
-.gallery-container .card-container {
-  padding: 16px;
-}
-.gallery-container .card-container img {
-  width: 100%;
-  padding-bottom: 16px;
-  border-radius: 8px;
-}
-.gallery-container .card-container .tagline {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 4px 8px;
-  font-size: 0.8rem;
-  background: #6cbfe0;
-  border-radius: 48px;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.gallery-container .card-container .bold {
-  font-family: Poppins-Bold, sans-serif;
-  padding-bottom: 24px;
-}
-.gallery-container .card-container a {
-  color: #048abf;
-}
-.gallery-container .card-container a:hover {
-  color: #6cbfe0;
-}
-
-@media screen and (max-width: 1100px) {
-  .gallery-container {
-    gap: 16px;
-  }
-}
 @media screen and (max-width: 975px) {
   .section .section-left-container .divider {
     margin: 0 16px;
@@ -464,12 +470,6 @@ nav .menu a:nth-of-type(2) {
   }
   .section .section-left-container p {
     padding: 12px 16px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .gallery-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 500px) {
