@@ -363,7 +363,7 @@ footer .footer-bottom a:hover {
 nav .menu:hover a:not(:hover) {
   color: #001219;
 }
-nav .menu a:first-of-type {
+nav .menu a:nth-of-type(1) {
   color: #048abf;
 }
 

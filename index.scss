@@ -12,7 +12,7 @@ nav {
     &:hover a:not(:hover) {
       color: $black;
     }
-    a:first-of-type {
+    a:nth-of-type(1) {
       color: $primary;
     }
   }
