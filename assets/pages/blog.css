@@ -235,6 +235,7 @@ nav #icons {
   }
 }
 #first-button {
+  display: inline-block;
   padding: 8px 16px;
   margin-right: 16px;
   background: #048abf;
@@ -251,6 +252,7 @@ nav #icons {
 }
 
 #second-button {
+  display: inline-block;
   padding: 8px 16px;
   margin-right: 16px;
   background: #d9d9d9;
@@ -277,7 +279,6 @@ nav #icons {
   margin: 0 auto 96px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 24px;
 }
 .gallery-container .card-container {
@@ -288,7 +289,7 @@ nav #icons {
   padding-bottom: 16px;
   border-radius: 8px;
 }
-.gallery-container .card-container .tagline {
+.gallery-container .card-container .tag {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 4px 8px;
   font-size: 0.8rem;
@@ -316,7 +317,6 @@ nav #icons {
 @media screen and (max-width: 550px) {
   .gallery-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 footer {
@@ -415,12 +415,14 @@ nav .menu a:nth-of-type(3) {
 .section .section-left-container {
   width: 50%;
 }
-.section .section-left-container .bold {
-  font-family: Poppins-Bold, sans-serif;
+.section .section-left-container h4 {
   padding: 16px 16px 24px;
 }
 .section .section-left-container p {
   padding: 16px 16px 24px;
+}
+.section .section-left-container #first-button {
+  margin: 16px 16px 24px;
 }
 .section .section-right-container {
   width: 50%;

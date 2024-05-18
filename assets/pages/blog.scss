@@ -36,12 +36,14 @@ nav {
   gap: 24px;
   .section-left-container {
     width: 50%;
-    .bold {
-      font-family: $bodybold;
+    h4 {
       padding: 16px 16px 24px;
     }
     p {
       padding: 16px 16px 24px;
+    }
+    #first-button {
+      margin: 16px 16px 24px;
     }
   }
   .section-right-container {

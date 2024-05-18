@@ -5,7 +5,6 @@
   margin: 0 auto 96px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 24px;
   .card-container {
     padding: 16px;
@@ -14,7 +13,7 @@
       padding-bottom: 16px;
       border-radius: 8px;
     }
-    .tagline {
+    .tag {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       padding: 4px 8px;
       font-size: 0.8rem;
@@ -47,6 +46,5 @@
 @media screen and (max-width: 550px) {
   .gallery-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
 }
