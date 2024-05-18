@@ -1,0 +1,89 @@
+@import "../styles/settings_pages";
+@import "../styles/navbar";
+@import "../styles/buttons";
+@import "../styles/gallery";
+@import "../styles/footer";
+
+// *NAV
+nav {
+  .menu {
+    &:hover a:not(:hover) {
+      color: $black;
+    }
+    a:nth-of-type(3) {
+      color: $primary;
+    }
+  }
+}
+//
+//
+// *TITLE
+.title {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 48px;
+  padding: 16px;
+}
+//
+//
+// *SECTION
+.section {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  .section-left-container {
+    width: 50%;
+    .bold {
+      font-family: $bodybold;
+      padding: 16px 16px 24px;
+    }
+    p {
+      padding: 16px 16px 24px;
+    }
+  }
+  .section-right-container {
+    width: 50%;
+    img {
+      width: 100%;
+      padding: 16px;
+      border-radius: 8px;
+    }
+  }
+}
+//
+//
+// *----------
+// *RESPONSIVE
+// *----------
+@media screen and (max-width: 600px) {
+  .section {
+    .section-left-container {
+      .bold {
+        padding: 12px 16px;
+      }
+      p {
+        padding: 12px 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    margin: 0 auto 24px;
+    padding: 0 16px;
+  }
+  .section {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 0 auto 24px;
+    .section-left-container {
+      width: 100%;
+    }
+    .section-right-container {
+      width: 100%;
+    }
+  }
+}
