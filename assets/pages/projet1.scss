@@ -1,0 +1,145 @@
+@import "../styles/settings_pages";
+@import "../styles/navbar";
+@import "../styles/buttons";
+@import "../styles/gallery";
+@import "../styles/footer";
+
+// *NAV
+nav {
+  .menu {
+    &:hover a:not(:hover) {
+      color: $black;
+    }
+    a:nth-of-type(2) {
+      color: $primary;
+    }
+  }
+}
+//
+//
+// *ARTICLE
+.article {
+  max-width: 720px;
+  width: 60%;
+  margin: 96px auto 96px;
+  .backlink {
+    margin-bottom: 96px;
+    a,
+    i {
+      color: $primary;
+    }
+  }
+  .tagline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .tag {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      background: $primary;
+      border-radius: 48px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    .date {
+      font-family: $bodybold;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      color: $backgroundgrey;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+  }
+  h1 {
+    margin-bottom: 24px;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .author-left {
+      img {
+        width: 64px;
+        border-radius: 48px;
+      }
+    }
+    .author-right {
+      padding-left: 16px;
+      .name {
+        font-family: $bodybold;
+      }
+      .profession {
+        font-family: $body;
+      }
+    }
+  }
+  .illustration {
+    img {
+      width: 100%;
+      padding: 0 16px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+  }
+  .content {
+    padding: 0 16px;
+    .intro {
+      font-family: $blogbold;
+      padding-bottom: 16px;
+    }
+    .section {
+      padding-bottom: 32px;
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+    .conclusion {
+      padding-bottom: 32px;
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+    .resources {
+      padding-bottom: 32px;
+      h2 {
+        margin-bottom: 16px;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+//
+//
+// *ARTICLES RELATIFS
+.relativ-articles {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 96px;
+  h2 {
+    margin-bottom: 48px;
+  }
+}
+//
+//
+// *---------
+// *REPONSIVE
+// *---------
+@media screen and (max-width: 600px) {
+  .article {
+    margin: 48px auto;
+    .backlink {
+      margin-bottom: 48px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .article {
+    width: 70%;
+  }
+}
